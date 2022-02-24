@@ -1,0 +1,41 @@
+/* Add colours here */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Typography styles */
+
+body { 
+    font-family: '', serif;
+    color: ;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+} 
+
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.5rem; }
+
+
+p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child {margin-bottom:0;}
+
+a {
+    color: inherit;
+    padding-bottom: 2px;
+    border-bottom: 1px solid ;
+    text-decoration: none;
+}
+
+a:hover {color: ;}
