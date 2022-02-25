@@ -1,30 +1,66 @@
-/* Add colours here */
+/* Light grey #D5CECE
+dark grey #707070
+green #183127
+ */
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;   
+}
+
+*   [class*="grid-"], [class*="grid_"], [class~="grid"] {
+    margin:0;
 }
 
 /* Typography styles */
 
+@font-face {
+    font-family: 'Sophillia';
+    src: url('/fonts/sophillia-webfont.woff');
+    src: local('☺︎'),
+      url("/fonts/sophillia-webfont.woff") format("woff"),
+      url("/fonts/sophillia-webfont.woff2") format("woff2"),
+      url("/fonts/SophilliaRegular.eot") format("eot"),
+      url("/fonts/SophilliaRegular.ttf") format("truetype");
+    }
+  @media screen and (max-device-width: 480px) {
+    @font-face {
+      font-family: "Sophillia";
+      src: url("Sophillia.woff") format("woff"),
+      url("Sophillia.otf") format("opentype"),
+      url("Sophillia.svg#Sophillia") format("svg");
+  }}
+
 body { 
-    font-family: '', serif;
-    color: ;
+    font-family: 'Sophillia', 'Didot', serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: normal;
 }
 
 h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     line-height: 1.1;
+    font-weight: normal;
 } 
 
-h2 { font-size: 2.5rem; }
+h2 { font-size: 6rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.5rem; }
 
 
 p {
-    font-weight: 400;
+    font-weight: normal;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -34,8 +70,43 @@ p:last-child {margin-bottom:0;}
 a {
     color: inherit;
     padding-bottom: 2px;
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid;
     text-decoration: none;
 }
 
-a:hover {color: ;}
+a:hover {color: grey;}
+
+.center {text-align: center;}
+
+/* Images & background images */
+
+.bg-light {background-color: #D5CECE;}
+.bg-dark {background-color: #707070;}
+.bg-green {background-color: #183127;}
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    background-image: url('/images/saorsa-studio-hero.jpg');
+    min-height: 70vh;
+}
+
+.landscape {padding-bottom: 65%;}
+.portrait {padding-bottom: 125%;}
+.square   {padding-bottom: 100%;}
+
+/* Nav & links */
+
+.menu-container {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    top: 2%;
+    bottom: 0;
+    right: 0;
+    left: 92%;
+}

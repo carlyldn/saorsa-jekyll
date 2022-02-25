@@ -11,12 +11,44 @@
     <!-- Viewport meta for responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Gridlex for our flexbox grids  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
     <!-- This is our custom stylesheet -->
     <link href="/style.css" rel="stylesheet" />
 </head>
 
 <body>
+
+    <header>
+        <nav class="menu-container">
+          <div>
+            <p>ME</p>
+            <p>NU</p>
+          </div>
+        </nav>
+    </header>
     {{content}}
+
+    <footer class="grid-spaceBetween bg-green">
+        <div class="col-5">
+        <h3 class="logo">saorsa studio</h3>
+          <p><span>[sir-sha]</span> noun</p>
+          <p>Stand out from the crowd with us.</p>
+        </div>
+          <div class="col-4-middle">
+          <nav>
+            <a href="#" class="inline">About</a> |
+            <a href="#" class="inline">Our Process</a> |
+            <a href="#" class="inline">Portfolio</a>
+            <a href="#" class="inline">Contact Us</a>
+          </nav>
+          <nav>
+            <a href="#" class="inline social-links"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="inline social-links"><i class="fab fa-instagram"></i></a>
+         </nav>
+        </div>
+      </footer>
 </body>
 
 </html>
