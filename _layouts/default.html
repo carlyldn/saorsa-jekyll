@@ -14,6 +14,9 @@
     <!-- Gridlex for our flexbox grids  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
+    <!-- IvyPresto Display fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/pyc7aip.css">
+
     <!-- This is our custom stylesheet -->
     <link href="/style.css" rel="stylesheet" />
 </head>
@@ -21,19 +24,28 @@
 <body>
 
     <header>
-        <nav class="menu-container">
-          <div>
-            <p>ME</p>
-            <p>NU</p>
+        <div class="menu-container soph">
+            <span class="margin-b-0">ME</span>
+            <span>NU</span>
+        </div>
+
+          <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Our Process</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
           </div>
         </nav>
     </header>
+
     {{content}}
 
-    <footer class="grid-spaceBetween bg-green">
+    <footer class="grid-spaceBetween padding bg-green">
         <div class="col-5">
         <h3 class="logo">saorsa studio</h3>
-          <p><span>[sir-sha]</span> noun</p>
+          <p class="margin-b-0"><span class="ivy-italic">[sir-sha]</span> noun</p>
+          <p>f r e e d o m</p>
           <p>Stand out from the crowd with us.</p>
         </div>
           <div class="col-4-middle">
@@ -44,11 +56,16 @@
             <a href="#" class="inline">Contact Us</a>
           </nav>
           <nav>
-            <a href="#" class="inline social-links"><i class="fab fa-facebook"></i></a>
             <a href="#" class="inline social-links"><i class="fab fa-instagram"></i></a>
          </nav>
         </div>
       </footer>
+
+        <!-- Add jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- our custom jQuery script -->
+        <script src="/script.js"></script>      
 </body>
 
 </html>

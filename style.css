@@ -3,6 +3,10 @@ dark grey #707070
 green #183127
  */
 
+ section, div {
+    border: 1px solid red;
+ }
+
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +28,7 @@ green #183127
       url("/fonts/SophilliaRegular.eot") format("eot"),
       url("/fonts/SophilliaRegular.ttf") format("truetype");
     }
+
   @media screen and (max-device-width: 480px) {
     @font-face {
       font-family: "Sophillia";
@@ -33,9 +38,25 @@ green #183127
   }}
 
 body { 
-    font-family: 'Sophillia', 'Didot', serif;
-    color: white;
+    font-family: 'IvyPresto-Display', 'Didot', serif;
+    font-weight: 100;
+    color: #27332E;
 }
+
+.soph {
+    font-family: 'Sophillia', 'Didot', serif;
+    font-weight: normal;
+ }
+
+ .ivy {
+    font-family: 'IvyPresto-Display', 'Didot', serif;
+ }
+
+ .ivy-italic {
+    font-family: 'IvyPresto-Display', 'Didot', serif;
+    font-style: italic;
+    font-weight: 100;
+ }
 
 header {
     display: flex;
@@ -44,43 +65,34 @@ header {
     flex-direction: column;
 }
 
-h1 {
-    font-weight: normal;
-}
-
 h2, h3, h4, h5, h6 {
+    font-family: 'Sophillia', 'Didot', serif;
     margin-bottom: 1rem;
     line-height: 1.1;
     font-weight: normal;
-} 
+}
 
-h2 { font-size: 6rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.5rem; }
-
+h2 {font-size: 5rem;}
+h3 {font-size: 3rem;}
+h4 {font-size: 1.8rem;}
 
 p {
-    font-weight: normal;
+    font-weight: 100;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
 p:last-child {margin-bottom:0;}
 
-a {
-    color: inherit;
-    padding-bottom: 2px;
-    border-bottom: 1px solid;
-    text-decoration: none;
-}
-
-a:hover {color: grey;}
-
+.left   { text-align: left; }
+.right  { text-align: right; }
 .center {text-align: center;}
+.capped-width {max-width: 1200px;}
+.capped-small {max-width: 600px;}
 
 /* Images & background images */
 
-.bg-light {background-color: #D5CECE;}
+.bg-light {background-color: #FCFCFC;}
 .bg-dark {background-color: #707070;}
 .bg-green {background-color: #183127;}
 
@@ -99,14 +111,130 @@ a:hover {color: grey;}
 .portrait {padding-bottom: 125%;}
 .square   {padding-bottom: 100%;}
 
+.tall-50 {min-height: 50vh;}
+.tall-60 {min-height: 60vh;}
+.tall-70   {min-height: 70vh;}
+.tall-100 {min-height: 100vh;}
+
 /* Nav & links */
 
+a {
+    color: inherit;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+a:hover {color: #D9B289;}
+
 .menu-container {
+    cursor: pointer;
     font-size: 2rem;
     position: absolute;
-    z-index: 2;
-    top: 2%;
+    z-index: 5;
+    top: 2vh;
+    right: 2vh;
+    transition: 2s;
+}
+
+.menu-container span {
+    display: block;
+    line-height: 1;
+}
+
+.menu {
+    background: #183127;
+    position: fixed;
+    z-index: 4;
+    top: 0;
     bottom: 0;
     right: 0;
-    left: 92%;
+    left: 0;
+}
+
+.menu a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 4%;
+    text-align: center;
+    border: none;
+}
+
+.menu a:hover {
+    color: #DDDBC4;
+}
+
+ /* ---------- Padding Utility Classes ---------- */ 
+ .padding-sm { padding: 2.5%; }
+ .padding    { padding: 5%;   }
+ .padding-lg { padding: 10%;  }
+ 
+ .padding-05 { padding: 0.5rem; }
+ .padding-1  { padding: 1rem; }
+ .padding-2  { padding: 2rem; }
+ 
+ .padding-t  { padding-top: 5%; }
+ .padding-b  { padding-bottom: 5%; }
+ .padding-l  { padding-left: 5%; }
+ .padding-r  { padding-right: 5%; }
+ 
+ .padding-tb  { padding-top: 2%; padding-bottom: 2%; }
+ .padding-lr  { padding-left: 5%; padding-right: 5%; }
+ 
+ .padding-t-1 { padding-top: 1rem; }
+ .padding-b-1 { padding-bottom: 1rem; }
+ .padding-l-1 { padding-left: 1rem; }
+ .padding-r-1 { padding-right: 1rem; }
+ 
+ .padding-t-2 { padding-top: 2rem; }
+ .padding-b-2 { padding-bottom: 2rem; }
+ .padding-l-2 { padding-left: 2rem; }
+ .padding-r-2 { padding-right: 2rem; }
+ 
+ .padding-t-0 { padding-top: 0; }
+ .padding-b-0 { padding-bottom: 0; }
+ .padding-l-0 { padding-left: 0; }
+ .padding-r-0 { padding-right: 0; }
+ 
+ /* ---------- Margin Utility Classes ---------- */ 
+ 
+ .margin-t { margin-top: 5%; }
+ .margin-b { margin-bottom: 5%; }
+ .margin-l { margin-left: 5%; }
+ .margin-r { margin-right: 5%; }
+ 
+ .margin-t-1 { margin-top: 1rem; }
+ .margin-b-1 { margin-bottom: 1rem; }
+ .margin-l-1 { margin-left: 1rem; }
+ .margin-r-1 { margin-right: 1rem; }
+ 
+ .margin-t-2 { margin-top: 2rem; }
+ .margin-b-2 { margin-bottom: 2rem; }
+ .margin-l-2 { margin-left: 2rem; }
+ .margin-r-2 { margin-right: 2rem; }
+ 
+ .margin-t-0 { margin-top: 0; }
+ .margin-b-0 { margin-bottom: 0; }
+ .margin-l-0 { margin-left: 0; }
+ .margin-r-0 { margin-right: 0; }
+ 
+ .margin-tb { margin-top: 5%; margin-bottom: 5%; }
+ .margin-lr { margin-left: 5%; margin-right: 5%; }
+
+ /* Instagram widget */
+
+ .lightwidget-widget {
+    width:100%;
+    border:0;
+    overflow:hidden;
+ }
+
+ /* General CSS  Respondive Styles (Apply everywhere unless overriden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md,
+.menu {
+	display: none;
 }
