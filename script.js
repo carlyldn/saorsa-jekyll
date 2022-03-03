@@ -3,6 +3,7 @@ $( document ).ready(function() {
     $('.menu-container').click(function(){
         $('.menu').fadeToggle(600);
         $(this).toggleClass('active');
+        
   });
 
     // Animate on scroll
