@@ -120,7 +120,6 @@ p:last-child {margin-bottom:0;}
 
 .hero {
     background-image: url('/images/saorsa-studio-hero.jpg');
-    min-height: 70vh;
 }
 
 .landscape {padding-bottom: 65%;}
