@@ -143,36 +143,25 @@ a {
 
 a:hover {color: #D9B289;}
 
-.menu-container {
+.menu-button {
     cursor: pointer;
     font-size: 2rem;
     position: absolute;
     z-index: 5;
     top: 2vh;
-    right: 2vh;
-    transition: 2s;
-}
-
-.menu-container.active {
-    display: none;
-    transition: 2s;
+    right: 4vh;
+    /* transition: 2s; */
 }
 
 .cross {
-    color:#DDDBC4;
-    font-size: 4rem;
     cursor: pointer;
+    font-size: 2.5rem;
+    color:#DDDBC4;
     position: absolute;
     z-index: 5;
     top: 2vh;
-    right: 3vh;
-    transition: 2s;
-}
-
-.cross.active {
-    display: block;
-    color: #DDDBC4;
-    z-index: 9;
+    right: 5vh;
+    /* transition: 2s; */
 }
 
 .menu-container span {
@@ -181,6 +170,7 @@ a:hover {color: #D9B289;}
 }
 
 .menu {
+    display: none;
     background: #183127;
     position: fixed;
     z-index: 4;
@@ -209,7 +199,7 @@ input,
 textarea {
     width: 100%;
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 2rem;
     padding: 0.5rem;
     font-family: inherit;
     font-size: 0.9rem;
@@ -228,6 +218,14 @@ textarea:focus {
     appearance: none;
     border: 2px solid #183127;
     color: #efe7dd;
+    cursor: pointer;
+}
+
+.button:hover {color: white;}
+
+.label {
+    display:inline-block;
+    margin-bottom: 8px;
 }
 
  /* ---------- Padding Utility Classes ---------- */ 
@@ -295,10 +293,10 @@ textarea:focus {
     overflow:hidden;
  }
 
- /* General CSS  Respondive Styles (Apply everywhere unless overriden) */ 
+ /* General CSS  Responsive Styles (Apply everywhere unless overriden) */ 
 
 .show-xs, 
 .show-sm,
 .show-md,
-.menu
+.cross
  {display: none;}

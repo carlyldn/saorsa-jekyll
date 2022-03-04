@@ -2,9 +2,14 @@
 $( document ).ready(function() {
     $('.menu-container').click(function(){
         $('.menu').fadeToggle(600);
-        $(this).toggleClass('active');
-        
-  });
+        $('.cross').show();
+        $('.menu-button').hide();
+    $('.cross').click(function(){
+        $('.menu').fadeToggle(600);
+        $('.menu-button').show();
+        $('.cross').hide();
+    })});
+
 
     // Animate on scroll
     AOS.init();
