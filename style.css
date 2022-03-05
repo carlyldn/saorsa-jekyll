@@ -4,7 +4,7 @@ green #183127
  */
 
  section, div {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
  }
 
 * {
@@ -57,12 +57,20 @@ body {
  }
 
  .ivy-italic {
-    font-family: 'IvyPresto-Display', 'Didot', serif;
-    font-style: italic;
+    font-family: 'IvyPresto-Display', serif;
     font-weight: 400;
+    font-style: italic;
  }
 
+
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,9 +92,6 @@ h2, h3, h4, h5, h6 {
 .uppercase {
     text-transform: uppercase;
     letter-spacing: 2px;}
-
-
-h3 {font-size: 3rem;}
 
 p {
     font-weight: 400;
