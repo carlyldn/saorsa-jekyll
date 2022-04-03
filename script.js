@@ -1,26 +1,22 @@
-// A $( document ).ready() block.
+// Menu show and hide
 // $( document ).ready(function() {
-//     $('.menu-container').click(function(){
-//         $('.menu').fadeToggle(600);
-//         $('.cross').show();
-//         $('.menu-button').hide();
-//     $('.cross').click(function(){
-//         $('.menu').fadeToggle(600);
-//         $('.menu-button').show();
-//         $('.cross').hide();
-//     })});
+// $('.menu-container').click(function(){
+//     $('.menu').fadeToggle(600);
+//     $('.cross').show();
+//     $('.menu-button').hide();
+// });
+
+// $('.cross').click(function(){
+//     $('.menu').fadeToggle(600);
+//     $('.menu-button').show();
+//     $('.cross').hide();
+// });
 
 $( document ).ready(function() {
 $('.menu-container').click(function(){
     $('.menu').fadeToggle(600);
-    $('.cross').show();
-    $('.menu-button').hide();
-});
-
-$('.cross').click(function(){
-    $('.menu').fadeToggle(600);
-    $('.menu-button').show();
-    $('.cross').hide();
+    $('.cross').fadeToggle(0);
+    $('.menu-button').fadeToggle(0);
 });
 
     // Animate on scroll
