@@ -155,6 +155,7 @@ img {max-width: 100%;}
 
 .placeholder {
     background-image: url('/images/placeholder.png');
+    min-height: 20vh;
 }
 
 .headshot {
@@ -179,15 +180,18 @@ img {max-width: 100%;}
 .relative {position: relative;}
 
 .water {
+    background-color: lightgray;
     background-image: url('/images/saorsa-studio-london-web-developer.jpg');
-    min-height: 40vh;
+    min-height: 60vh;
 }
 
 .flowers {
-    margin-top: 10rem;
-    margin-left: -15rem;
+    background-color: lightgray;
     height: 40vh;
     position: absolute;
+    top: -2rem;
+    right: -1rem;
+    margin:0 ;
 }
 
 .landscape {padding-bottom: 65%;}
