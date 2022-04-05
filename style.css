@@ -39,6 +39,24 @@ green #183127
       url("Sophillia.svg#Sophillia") format("svg");
   }}
 
+  @font-face {
+    font-family: 'Culture';
+    src: url('/fonts/culture-bold-webfont.woff');
+    src: local('☺︎'),
+      url("/fonts/culture-bold-webfont.woff") format("woff"),
+      url("/fonts/culture-bold-webfont.woff2") format("woff2"),
+      url("/fonts/Culture-Bold.otf") format("opentype"),
+      url("/fonts/culture-bold-webfont.ttf") format("truetype");
+    }
+
+  @media screen and (max-device-width: 480px) {
+    @font-face {
+      font-family: "Culture";
+      src: url("Culture.woff") format("woff"),
+      url("Culture.otf") format("opentype"),
+      url("Culture.svg#Culture") format("svg");
+  }}
+
 body { 
     font-family: 'IvyPresto-Display', 'Didot', serif;
     font-size: 1.1rem;
@@ -68,6 +86,11 @@ p:last-child {margin-bottom:0;}
     font-weight: normal;
  }
 
+ .culture {
+     font-family: 'Culture';
+     font-weight: normal;
+ }
+
  .ivy {
     font-family: 'IvyPresto-Display', 'Didot', serif;
     font-weight: normal;
@@ -82,9 +105,16 @@ p:last-child {margin-bottom:0;}
 
  .logo {
      font-family: 'Sophillia', 'Didot', serif;
-     font-size: 2rem;
+     font-size: 5rem;
      font-weight: normal;
  }
+
+ .dot {letter-spacing: 5px;}
+
+.logo-subtitle {
+    line-height: 1;
+    margin-top: -1.2rem;
+}
 
  .subtitle {
      font-size: 0.7rem;
@@ -164,13 +194,13 @@ img {max-width: 100%;}
 
 .headshot-2 {
     height: 30vh;
-    width: 10vw;
-    margin-top: -10rem;
-    margin-left: 25rem;
-    margin-right: -7rem;
+    width: 13vw;
+    width: 15vw;
+    margin-top: -11rem;
+    margin-left: -10rem;
     object-fit: cover;
     object-position: center;
-    position: relative;
+    position: absolute;
 }
 
 /* .hero {
@@ -191,6 +221,15 @@ img {max-width: 100%;}
     position: absolute;
     top: -2rem;
     right: -1rem;
+    margin:0 ;
+}
+
+.flowers-mob {
+    background-color: lightgray;
+    height: 30vh;
+    position: absolute;
+    top: 15rem;
+    right: -10rem;
     margin:0 ;
 }
 
@@ -224,6 +263,8 @@ a:hover {color: #CF593A;}
     right: 4vh;
 }
 
+.menu-button:hover {color:#CF593A;}
+
 .cross {
     cursor: pointer;
     font-size: 3rem;
@@ -234,6 +275,8 @@ a:hover {color: #CF593A;}
     right: 5vh;
     /* transition: 2s; */
 }
+
+.cross:hover {color:#CF593A;}
 
 .menu-container span {
     display: block;
@@ -402,6 +445,7 @@ textarea:focus {
 
 @media (max-width: 48em) {
     body {border: 1px solid green;}
+    html {font-size: 14px;}
   .show-sm { display: block; }
   .hide-sm { display: none;}
 
