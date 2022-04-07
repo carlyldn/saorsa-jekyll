@@ -1,49 +1,71 @@
 ---
 layout: default
 title: Portfolio
+projects:
+ - p1: Gaia
+   p2: Glamping
+   paragraph_1: A single page website concept for a glamping company.
+   paragraph_2: Option to integrate preferred booking platform to allow direct bookings from customers.
+   project_image: /images/gaia.png
+   url:
+   p3: Baked by
+   p4: Sophia
+   paragraph_3: A four page website concept for an independent home bakery.
+   paragraph_4: Option to integrate Shopify buttons to allow direct orders.
+   project_image_2: /images/placeholder.png
+   url: 
+ - p1: Hungry Vegan
+   p2: Co
+   paragraph_1: A single page website concept for a vegan restaurant.
+   paragraph_2: Option to integrate preferred booking platform to allow direct bookings from customers.
+   project_image: /images/gaia.png  
+   url:  
+   p3: The Sleep
+   p4: Company
+   paragraph_3: A four page website concept for an independent home bakery.
+   paragraph_4: Option to integrate Shopify buttons to allow direct orders.
+   project_image_2: /images/placeholder.png  
+   url: 
 ---
 
 <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
     <div class="col-12-middle padding">
-        <h2 class="huge soph padding-b1 center">our portfolio</h2>
+        <h2 class="huge culture uppercase center">portfolio</h2>
     </div>
     </section>
 
-    <!-- Project One -->
-    <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
-        <div class="col-6-middle padding">
-            <h2 class="big padding-b1">PROJECT <span class="ivy-italic ivy-big"> ONE</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatem esse temporibus. Temporibus iste aliquid nam. Necessitatibus natus, nam ad unde blanditiis, voluptatum nostrum possimus vel doloremque corporis corrupti repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae, enim nobis nisi officiis odit? Assumenda explicabo, suscipit beatae tempore autem adipisci sit et, repellat ipsa quibusdam harum tenetur. Vero?</p>
-                <a href="/about.html" class="margin-t2">View live project</a>
+    <!-- Projects for loop -->
+    <section class="bg-light" data-aos="fade-up" data-aos-duration="1500">
+
+        {% for item in page.projects %}
+        <!-- Project 1 -->
+        <div class="grid-center">
+            <div class="col-6-middle padding right">
+                <h2 class="big padding-b1 uppercase culture">{{item.p1}} <span class="ivy-italic ivy-big"> {{item.p2}}</span></h2>
+                <p>{{item.paragraph_1}}</p>
+                <p>{{item.paragraph_2}}</p>
+                <a href="{{item.url}}" class="margin-t2">View live project</a>
+            </div>
+
+            <div class="col-5-middle padding-r">
+                <div class="padding">
+                    <img src="{{item.project_image}}">
+                </div>
+            </div>
+
+        <!-- Project two -->
+            <div class="col-5-middle padding-l">
+                <div class="padding">
+                    <div><img src="{{item.project_image_2}}"></div>
+                </div>
+            </div>
+            <div class="col-6-middle padding">
+                <h2 class="big padding-b1 uppercase culture">{{item.p3}} <span class="ivy-italic ivy-big"> {{item.p4}}</span></h2>
+                <p>{{item.paragraph_3}}</p>
+                <p>{{item.paragraph_4}}</p>
+                <a href="{{item.url}}" class="margin-t2">View live project</a>
+            </div>
+            {% endfor %}
         </div>
 
-        <div class="col-5-middle padding-r">
-            <div class="padding">
-            <div class="bg-image placeholder landscape"></div>
-        </div>
-        </div>
-
-        <div class="col-6-middle padding-l">
-            <div class="padding">
-            <div class="bg-image placeholder landscape"></div>
-        </div>
-        </div>
-
-        <div class="col-6-middle padding">
-            <h2 class="big padding-b1">PROJECT <span class="ivy-italic ivy-big"> TWO</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatem esse temporibus. Temporibus iste aliquid nam. Necessitatibus natus, nam ad unde blanditiis, voluptatum nostrum possimus vel doloremque corporis corrupti repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae, enim nobis nisi officiis odit? Assumenda explicabo, suscipit beatae tempore autem adipisci sit et, repellat ipsa quibusdam harum tenetur. Vero?</p>
-                <a href="/about.html" class="margin-t2">View live project</a>
-        </div>
-
-        <div class="col-6-middle padding">
-            <h2 class="big padding-b1">PROJECT <span class="ivy-italic ivy-big"> THREE</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatem esse temporibus. Temporibus iste aliquid nam. Necessitatibus natus, nam ad unde blanditiis, voluptatum nostrum possimus vel doloremque corporis corrupti repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae, enim nobis nisi officiis odit? Assumenda explicabo, suscipit beatae tempore autem adipisci sit et, repellat ipsa quibusdam harum tenetur. Vero?</p>
-                <a href="/about.html" class="margin-t2">View live project</a>
-        </div>
-
-        <div class="col-5-middle padding-r">
-            <div class="padding">
-            <div class="bg-image placeholder landscape"></div>
-        </div>
-        </div>
 </section>
