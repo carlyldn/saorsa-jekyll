@@ -178,7 +178,11 @@ p:last-child {margin-bottom:0;}
 
 /* Images & background images */
 
-img {max-width: 100%;}
+img {
+    max-width: 100%;
+    margin: auto;}
+
+.relative {position: relative;}
 
 .bg-light {background-color: #efe7dd;}
 .bg-dark {background-color: #707070;}
@@ -210,12 +214,6 @@ img {max-width: 100%;}
     position: absolute;
 }
 
-/* .hero {
-    background-image: url('/images/saorsa-studio-hero.jpg');
-} */
-
-.relative {position: relative;}
-
 .water {
     background-color: lightgray;
     background-image: url('/images/saorsa-studio-london-web-developer.jpg');
@@ -238,6 +236,17 @@ img {max-width: 100%;}
     top: 15rem;
     right: -10rem;
     margin:0 ;
+}
+
+.img-01 {
+    background-color: lightgray;
+    background-image: url('/images/saorsa-home-01.jpg');
+    height: 70vh;
+}
+
+.mockup-home {
+    background-color: lightgray;
+    background-image: url('images/home-mockup.jpg');
 }
 
 .landscape {padding-bottom: 65%;}
