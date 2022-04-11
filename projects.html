@@ -29,7 +29,7 @@ projects:
 ---
 
 <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
-    <div class="col-12-middle padding sm-pt30">
+    <div class="col-12-middle padding hide-sm">
         <h2 class="huge culture uppercase center">portfolio</h2>
     </div>
     </section>
@@ -40,26 +40,26 @@ projects:
         {% for item in page.projects %}
         <!-- Project 1 -->
         <div class="grid-center">
-            <div class="col-6-middle_sm-12 padding right sm-center">
+            <div class="col-6-middle_sm-12 padding right sm-center sm-pt30">
                 <h2 class="big padding-b1 uppercase culture">{{item.p1}} <span class="ivy-italic"> {{item.p2}}</span></h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
                 <a href="{{item.url}}" class="margin-t2">View live project</a>
             </div>
 
-            <div class="col-5-middle_sm-12 padding-r sm-p0">
+            <div class="col-5-middle_sm-12 padding-r sm-reset">
                 <div class="padding">
                     <img src="{{item.project_image}}">
                 </div>
             </div>
 
         <!-- Project two -->
-            <div class="col-5-middle_sm-12 padding-l sm-p0 order-3">
+            <div class="col-5-middle_sm-12 padding-l sm-reset order-3">
                 <div class="padding">
                     <div><img src="{{item.project_image_2}}"></div>
                 </div>
             </div>
-            <div class="col-6-middle_sm-12-middle padding sm-center order-2">
+            <div class="col-6-middle_sm-12-middle padding sm-center sm-pt30 order-2">
                 <h2 class="big padding-b1 uppercase culture">{{item.p3}} <span class="ivy-italic"> {{item.p4}}</span></h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
