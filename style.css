@@ -109,7 +109,11 @@ p:last-child {margin-bottom:0;}
      font-weight: normal;
  }
 
- .dot {letter-spacing: 5px;}
+ .dot {
+    position: relative;
+    left: 3px;
+    letter-spacing: 5px;
+}
 
 .logo-subtitle {
     line-height: 1;
@@ -462,8 +466,21 @@ textarea:focus {
 @media (max-width: 48em) {
     body {border: 1px solid green;}
     html {font-size: 14px;}
-  .show-sm { display: block; }
-  .hide-sm { display: none;}
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;}
+
+    .reg {font-size: 1.2rem;}
+    .med {font-size: 1.8rem;}
+    .big {font-size: 2.5rem;}
+    .huge {font-size: 3.5rem;}
+
+    .sm-center {text-align: center;}
+
+    .sm-p0 {padding: 0;}
+
+    .order-2 {order: 2;}
+    .order-3 {order: 3;}
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 

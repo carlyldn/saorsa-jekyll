@@ -40,27 +40,27 @@ projects:
         {% for item in page.projects %}
         <!-- Project 1 -->
         <div class="grid-center">
-            <div class="col-6-middle padding right">
-                <h2 class="big padding-b1 uppercase culture">{{item.p1}} <span class="ivy-italic ivy-big"> {{item.p2}}</span></h2>
+            <div class="col-6-middle_sm-12 padding right sm-center">
+                <h2 class="big padding-b1 uppercase culture">{{item.p1}} <span class="ivy-italic"> {{item.p2}}</span></h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
                 <a href="{{item.url}}" class="margin-t2">View live project</a>
             </div>
 
-            <div class="col-5-middle padding-r">
+            <div class="col-5-middle_sm-12 padding-r sm-p0">
                 <div class="padding">
                     <img src="{{item.project_image}}">
                 </div>
             </div>
 
         <!-- Project two -->
-            <div class="col-5-middle padding-l">
+            <div class="col-5-middle_sm-12 padding-l sm-p0 order-3">
                 <div class="padding">
                     <div><img src="{{item.project_image_2}}"></div>
                 </div>
             </div>
-            <div class="col-6-middle padding">
-                <h2 class="big padding-b1 uppercase culture">{{item.p3}} <span class="ivy-italic ivy-big"> {{item.p4}}</span></h2>
+            <div class="col-6-middle_sm-12-middle padding sm-center order-2">
+                <h2 class="big padding-b1 uppercase culture">{{item.p3}} <span class="ivy-italic"> {{item.p4}}</span></h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
                 <a href="{{item.url}}" class="margin-t2">View live project</a>
