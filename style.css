@@ -431,23 +431,16 @@ textarea:focus {
     overflow:hidden;
  }
 
+/* ---------- Responsive ---------- */
+
  /* General CSS  Responsive Styles (Apply everywhere unless overriden) */ 
 
-.show-xs, 
-.show-sm,
-.show-md,
-.cross
+.xs-show, 
+.sm-show,
+.md-show,
+.cross,
+.sm-sub
  {display: none;}
-
- /* ---------- Responsive ---------- */
-
-/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
-
-.show-xs, 
-.show-sm,
-.show-md {
-	display: none;
-}
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
@@ -467,8 +460,11 @@ textarea:focus {
     body {border: 1px solid green;}
     html {font-size: 14px;}
 
-    .show-sm { display: block; }
-    .hide-sm { display: none;}
+    .sm-show,
+    .sm-sub
+     {display: block;}
+
+    .sm-hide { display: none;}
 
     .reg {font-size: 1.2rem;}
     .med {font-size: 1.8rem;}
@@ -483,20 +479,26 @@ textarea:focus {
     .sm-center {text-align: center;}
 
     .sm-p0 {padding: 0;}
+    .sm-pt10 {padding-top: 10%;}
     .sm-pt30 {padding-top: 30%;}
+
+    .sm-mb5 {margin-bottom: 5%;}
 
     .order-1 {order: 1;}
     .order-2 {order: 2;}
     .order-3 {order: 3;}
     .order-4 {order: 4;}
+    .order-5 {order: 5;}
+
+    .sm-sub {display: block;}
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
     body {border: 1px solid orange;}
-  .show-xs { display: block; }
-  .hide-xs { display: none;  }
+  .xs-show { display: block; }
+  .xs-hide { display: none;  }
 
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
