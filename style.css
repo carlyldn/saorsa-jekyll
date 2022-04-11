@@ -210,7 +210,6 @@ img {
 .headshot-2 {
     height: 30vh;
     width: 13vw;
-    width: 15vw;
     margin-top: -11rem;
     margin-left: -10rem;
     object-fit: cover;
@@ -484,6 +483,10 @@ textarea:focus {
     .sm-pt40 {padding-top: 40%;}
 
     .sm-mb5 {margin-bottom: 5%;}
+
+    .headshot {
+        height: 30vh;
+    }
 
     .order-1 {order: 1;}
     .order-2 {order: 2;}
