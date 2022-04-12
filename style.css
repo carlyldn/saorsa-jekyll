@@ -445,7 +445,9 @@ textarea:focus {
   body {border: 1px solid blue;}
 
   .water {min-height: 40vh;}
-  .flowers {min-height: 18vh;}
+  
+  .menu-button {
+    color: #efe7dd;
 
 }
 
