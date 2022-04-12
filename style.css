@@ -203,29 +203,32 @@ img {
     min-height: 20vh;
 }
 
-.headshot {
-    height: 60vh;
-}
+/* .headshot {
+    position: absolute;
+    z-index: 2;
+} */
 
 .headshot-2 {
-    height: 30vh;
-    width: 13vw;
     margin-top: -11rem;
     margin-left: -10rem;
     object-fit: cover;
     object-position: center;
     position: absolute;
+    z-index: -1;
 }
 
 .water {
     background-color: lightgray;
     background-image: url('/images/saorsa-studio-london-web-developer.jpg');
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 .flowers {
     background-color: lightgray;
-    height: 40vh;
+    height: 30vh;
+    width: 25vh;
+    object-fit: cover;
+    object-position: center;
     position: absolute;
     top: -2rem;
     right: -1rem;
@@ -238,8 +241,10 @@ img {
     position: absolute;
     top: 15rem;
     right: -10rem;
-    margin:0 ;
+    margin: 0 ;
 }
+
+.top {z-index: 10;}
 
 .img-01 {
     background-color: lightgray;
@@ -370,7 +375,6 @@ textarea:focus {
  .padding    { padding: 5%;   }
  .padding-lg { padding: 10%;  }
  
- .padding-05 { padding: 0.5rem; }
  .padding-1  { padding: 1rem; }
  .padding-2  { padding: 2rem; }
  
@@ -401,6 +405,7 @@ textarea:focus {
  
  .margin-t { margin-top: 5%; }
  .margin-b { margin-bottom: 5%; }
+ .mb10 {margin-bottom: 10%;}
  .margin-l { margin-left: 5%; }
  .margin-r { margin-right: 5%; }
  
@@ -450,6 +455,9 @@ textarea:focus {
 
   body {border: 1px solid blue;}
 
+  .water {min-height: 40vh;}
+  .flowers {min-height: 18vh;}
+
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -470,6 +478,8 @@ textarea:focus {
     .big {font-size: 2.5rem;}
     .huge {font-size: 3.5rem;}
 
+    .logo {font-size: 3.5rem;}
+
     .sm-reset {
         padding: 0;
         margin: 0;
@@ -483,10 +493,6 @@ textarea:focus {
     .sm-pt40 {padding-top: 40%;}
 
     .sm-mb5 {margin-bottom: 5%;}
-
-    .headshot {
-        height: 30vh;
-    }
 
     .order-1 {order: 1;}
     .order-2 {order: 2;}
