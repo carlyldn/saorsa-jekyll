@@ -235,17 +235,6 @@ img {
     margin:0 ;
 }
 
-.flowers-mob {
-    background-color: lightgray;
-    height: 30vh;
-    position: absolute;
-    top: 15rem;
-    right: -10rem;
-    margin: 0 ;
-}
-
-.top {z-index: 10;}
-
 .img-01 {
     background-color: lightgray;
     background-image: url('/images/saorsa-home-01.jpg');
