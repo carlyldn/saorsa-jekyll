@@ -107,6 +107,7 @@ p:last-child {margin-bottom:0;}
      font-family: 'Sophillia', 'Didot', serif;
      font-size: 5rem;
      font-weight: normal;
+     padding: 10% 0 0 10%;
  }
 
  .dot {
@@ -118,6 +119,7 @@ p:last-child {margin-bottom:0;}
 .logo-subtitle {
     line-height: 1;
     margin-top: -1.2rem;
+    padding-left: 10%;
 }
 
  .subtitle {
@@ -293,12 +295,32 @@ img {
     position: absolute;
 }
 
+.about-01 {
+    background-image: url('/images/saorsa-about-01.jpg');
+    min-height: 70vh;
+}
+
+.about-02 {
+    background-image: url('/images/about-02.jpg');
+    min-height: 70vh;
+}
+
+.headshot {
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    height: 60vh;
+    width: auto;
+}
+
 .headshot-2 {
-    margin-top: -11rem;
-    margin-left: -10rem;
     object-fit: cover;
     object-position: center;
     position: absolute;
+    margin-top: -11rem;
+    margin-left: -8rem;
+    height: 40vh;
+    width: auto;
     z-index: -1;
 }
 
@@ -325,10 +347,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {color: #dd8973;}
+a:hover {color: #CF593A}
 
 .menu-button {
-    color: #183127;
+    color: #CF593A;
     cursor: pointer;
     font-size: 2.5rem;
     position: fixed;
@@ -342,7 +364,7 @@ a:hover {color: #dd8973;}
 .cross {
     cursor: pointer;
     font-size: 3rem;
-    color:#DDDBC4;
+    color:#183127;
     position: fixed;
     z-index: 5;
     top: 2vh;
@@ -350,7 +372,7 @@ a:hover {color: #dd8973;}
     /* transition: 2s; */
 }
 
-.cross:hover {color:#dd8973;}
+.cross:hover {color:#CF593A}
 
 .menu-container span {
     display: block;
@@ -359,7 +381,8 @@ a:hover {color: #dd8973;}
 
 .menu {
     display: none;
-    background: #183127;
+    background: #efe7dd;
+    color: #183127;
     position: fixed;
     z-index: 4;
     top: 0;
@@ -401,8 +424,15 @@ textarea:focus {
 }
 
 .button {
+    border: 1px solid #183127;
+    padding: 0.5rem 2rem;
     display: inline-block;
     margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: #183127;
+    color: #efe7dd;
 }
 
 .label {
@@ -419,6 +449,7 @@ textarea:focus {
  .p2  { padding: 2rem; }
  
  .pt  { padding-top: 5%; }
+ .pt10 {padding-top: 10%;}
  .pb  { padding-bottom: 5%; }
  .pl  { padding-left: 5%; }
  .pr  { padding-right: 5%; }
@@ -426,6 +457,7 @@ textarea:focus {
  .pt1 { padding-top: 1rem; }
  .pb1 { padding-bottom: 1rem; }
  .pl1 { padding-left: 1rem; }
+ .pl5 { padding-left: 5%; }
  .pr1 { padding-right: 1rem; }
  
  
@@ -444,6 +476,7 @@ textarea:focus {
  .mr {margin-right: 5%;}
 
  .mb10 {margin-bottom: 10%;}
+ .mb20 {margin-bottom: 20%;}
  
  .mt2 {margin-top: 2rem;}
  .mb2 {margin-bottom: 2rem;}
@@ -538,6 +571,7 @@ textarea:focus {
     }
 
     .sm-center {text-align: center;}
+    .sm-left {text-align: left;}
 
     .sm-p0 {padding: 0;}
     .sm-pt10 {padding-top: 10%;}
@@ -570,6 +604,10 @@ textarea:focus {
       font-size: 1.5rem;
       margin-top: -0.5rem;
 }
+
+.xs-order-2 {order: 2;}
+
+.xs-center {text-align: center;}
 
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
