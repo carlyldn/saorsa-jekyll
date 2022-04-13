@@ -309,7 +309,7 @@ img {
     object-fit: cover;
     object-position: center;
     position: relative;
-    height: 60vh;
+    height: 40vh;
     width: auto;
 }
 
@@ -424,6 +424,8 @@ textarea:focus {
 }
 
 .button {
+    font-family: 'Culture';
+    text-transform: uppercase;
     border: 1px solid #183127;
     padding: 0.5rem 2rem;
     display: inline-block;
@@ -538,7 +540,7 @@ textarea:focus {
 
     .sm-hide { display: none;}
 
-    .sm-70 {min-height: 70vh;}
+    .sm-60 {min-height: 60vh;}
 
     .reg {font-size: 1.2rem;}
     .med {font-size: 1.8rem;}
@@ -597,6 +599,7 @@ textarea:focus {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
+  .xs-p5 {padding: 10%;}
   .xs-pt30 {padding-top: 30%;}
 
   .logo {font-size: 2.8rem;}
