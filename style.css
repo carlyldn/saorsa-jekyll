@@ -562,6 +562,8 @@ textarea:focus {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
+  .xs-pt30 {padding-top: 30%;}
+
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
