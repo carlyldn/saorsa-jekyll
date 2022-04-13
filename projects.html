@@ -29,7 +29,7 @@ projects:
 ---
 
 <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
-    <div class="col-12-middle padding sm-hide">
+    <div class="col-12-middle p5 sm-hide">
         <h2 class="huge culture uppercase center">portfolio</h2>
     </div>
     </section>
@@ -40,30 +40,30 @@ projects:
         {% for item in page.projects %}
         <!-- Project 1 -->
         <div class="grid-center">
-            <div class="col-6-middle_sm-12 padding right sm-center sm-pt40">
-                <h2 class="big padding-b1 uppercase culture">{{item.p1}} <span class="ivy-italic"> {{item.p2}}</span></h2>
+            <div class="col-6-middle_sm-12 p5 right sm-center sm-pt40">
+                <h2 class="big pb1 uppercase culture">{{item.p1}} <span class="ivy-italic"> {{item.p2}}</span></h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
-                <a href="{{item.url}}" class="margin-t2">View live project</a>
+                <a href="{{item.url}}" class="mt2">View live project</a>
             </div>
 
-            <div class="col-5-middle_sm-12 padding-r sm-reset">
-                <div class="padding">
+            <div class="col-5-middle_sm-12 pr sm-reset">
+                <div class="p5">
                     <img src="{{item.project_image}}">
                 </div>
             </div>
 
         <!-- Project two -->
-            <div class="col-5-middle_sm-12 padding-l sm-reset order-3">
-                <div class="padding">
+            <div class="col-5-middle_sm-12 pl sm-reset order-3">
+                <div class="p5">
                     <div><img src="{{item.project_image_2}}"></div>
                 </div>
             </div>
-            <div class="col-6-middle_sm-12-middle padding sm-center sm-pt30 order-2">
-                <h2 class="big padding-b1 uppercase culture">{{item.p3}} <span class="ivy-italic"> {{item.p4}}</span></h2>
+            <div class="col-6-middle_sm-12-middle p5 sm-center sm-pt30 order-2">
+                <h2 class="big pb1 uppercase culture">{{item.p3}} <span class="ivy-italic"> {{item.p4}}</span></h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
-                <a href="{{item.url}}" class="margin-t2">View live project</a>
+                <a href="{{item.url}}" class="mt2">View live project</a>
             </div>
             {% endfor %}
         </div>
