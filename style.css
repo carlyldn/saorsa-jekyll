@@ -595,6 +595,7 @@ textarea:focus {
     .reg {font-size: 1.2rem;}
     .med {font-size: 1.5rem;}
     .big {font-size: 2.5rem;}
+    .huge {font-size: 5rem;}
     .logo {font-size: 3.5rem;}
 
     .flex-b {
