@@ -607,12 +607,14 @@ textarea:focus {
     right: 2vh;
 }
 
-.cross {
+    .cross {
     top: 2vh;
     right: 3vh;
 }
 
-    .water {min-height: 40vh;}
+    .saorsa-coffee {
+    min-height: 40vh;
+    }
 
     .flowers {
       height: 20vh;
