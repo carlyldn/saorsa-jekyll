@@ -588,7 +588,7 @@ textarea:focus {
 
     .sm-mb10 {margin-bottom: 20%;}
 
-    .saorsa-chair {min-height: 40vh;}
+    .saorsa-chair {min-height: 30vh;}
     .headshot {min-height: 40vh;}
 
     p {font-size: 1rem;}
@@ -596,6 +596,11 @@ textarea:focus {
     .med {font-size: 1.5rem;}
     .big {font-size: 2.5rem;}
     .logo {font-size: 3.5rem;}
+
+    .flex-b {
+        display: flex;
+        align-self: flex-end;
+    }
  
     .menu-button {
     top: 2vh;
@@ -647,6 +652,9 @@ textarea:focus {
     html {font-size: 12px;}
   .xs-show { display: block; }
   .xs-hide { display: none;  }
+
+  .about-01 {min-height: 30vh;}
+  .about-02 {min-height: 30vh;}
 
   .xs-p5 {padding: 10%;}
   .xs-pt30 {padding-top: 30%;}
