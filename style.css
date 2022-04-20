@@ -273,7 +273,7 @@ img {
 
 .water {
     background-image: url('/images/saorsa-studio-london-web-developer.jpg');
-    min-height: 50vh;
+    min-height: 40vh;
     position: relative;
 }
 
@@ -612,7 +612,7 @@ textarea:focus {
     right: 3vh;
 }
 
-    .water {min-height: 30vh;}
+    .water {min-height: 50vh;}
 
     .flowers {
       height: 20vh;
