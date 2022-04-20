@@ -601,6 +601,11 @@ textarea:focus {
         display: flex;
         align-self: flex-end;
     }
+
+    .flex-c {
+        display: flex;
+        align-self: center;
+    }
  
     .menu-button {
     top: 2vh;
