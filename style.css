@@ -653,6 +653,8 @@ textarea:focus {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
+  .scroll a {bottom: 10%;}
+
   .about-01 {min-height: 30vh;}
   .about-02 {min-height: 30vh;}
 
