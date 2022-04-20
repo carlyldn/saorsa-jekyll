@@ -601,11 +601,6 @@ textarea:focus {
         display: flex;
         align-self: flex-end;
     }
-
-    .flex-c {
-        display: flex;
-        align-self: center;
-    }
  
     .menu-button {
     top: 2vh;
@@ -617,7 +612,7 @@ textarea:focus {
     right: 3vh;
 }
 
-    .water {min-height: 50vh;}
+    .water {min-height: 40vh;}
 
     .flowers {
       height: 20vh;
