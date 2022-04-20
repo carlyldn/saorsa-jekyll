@@ -4,7 +4,7 @@ green #183127
  */
 
 	/* Temporary Styles */
-	/* * {
+	* {
 	    border: 2px solid rgb(200,200,200);
 	}
 	html,
@@ -13,7 +13,7 @@ green #183127
 	}
 	h1,h2,h3,h4,h5,h6,p,a {
 	    border: 2px solid rgb(179, 84, 84);
-	} */
+	}
 /* End temporary styles */
 * {
     padding: 0;
@@ -296,13 +296,8 @@ img {
 }
 
 .saorsa-chair {
-    height: 35vh;
-    width: 30vh;
-    object-fit: cover;
-    object-position: center;
-    margin-top: -12rem;
-    margin-left: 5rem;
-    position: absolute;
+    background-image: url('/images/saorsa-chair.jpg');
+    min-height: 60vh;
 }
 
 .about-01 {
