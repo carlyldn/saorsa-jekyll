@@ -273,7 +273,7 @@ img {
 
 .water {
     background-image: url('/images/saorsa-studio-london-web-developer.jpg');
-    min-height: 40vh;
+    min-height: 50vh;
     position: relative;
 }
 
@@ -683,5 +683,4 @@ textarea:focus {
         flex-basis: 100%;
         max-width: 100%;
     }
-
 }
