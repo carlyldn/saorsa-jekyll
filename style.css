@@ -555,6 +555,7 @@ textarea:focus {
 .xs-show, 
 .sm-show,
 .md-show,
+.sm-flex,
 .cross,
 .sm-sub
  {display: none;}
