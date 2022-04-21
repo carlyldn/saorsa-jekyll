@@ -97,7 +97,7 @@ p:last-child {margin-bottom:0;}
  }
 
  .culture {
-     font-family: 'Culture';
+     font-family: 'Culture', 'Didot', serif;
      font-weight: normal;
  }
 
