@@ -578,9 +578,11 @@ textarea:focus {
     body {border: 1px solid green;}
     html {font-size: 14px;}
 
-    /* .sm-show, */
+    .sm-show,
     .sm-sub
      {display: block;}
+
+    .sm-flex {display:flex;}
 
     .sm-hide { display: none;}
 
