@@ -44,7 +44,7 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p1}} {{item.p2}}</h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
-                <a href='{{item.title_1 | remove: " ", "-"}}.saorsa.studio'>link text</a>
+                <a href='{{item.title_1 | remove: " ", "-"}}.saorsa.studio'>Link</a>
             </div>
 
             <div class="col-5-middle_sm-12 pr sm-reset">
@@ -63,7 +63,21 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p3}} {{item.p4}}</h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
-                <a href='{{item.title_2 | remove: " ", "-"}}.saorsa.studio'>View Project</a>
+                <a href='{{item.title_2 | remove: " ", "-"}}.saorsa.studio'>Test 1</a>
+                <a href='{{item.title_2 | replace: " ", "-"}.saorsa.studio'>Test 2</a>
+                <a href='{{item.title_2 remove: " ", "-"}.saorsa.studio'>Test 3</a>
+                <a href='{{item.title_2 replace: " ", "-"}.saorsa.studio'>Test 4</a>
+
+                <a href='{{item.title_2 | remove: "", "-"}}.saorsa.studio'>Test 5</a>
+                <a href='{{item.title_2 | replace: "", "-"}.saorsa.studio'>Test 6</a>
+                <a href='{{item.title_2 remove: "", "-"}.saorsa.studio'>Test 7</a>
+                <a href='{{item.title_2 replace: "", "-"}.saorsa.studio'>Test 8</a>
+
+                <a href='{{item.title_2 | remove: "", "/"}}.saorsa.studio'>Test 9</a>
+                <a href='{{item.title_2 | replace: "", "/"}.saorsa.studio'>Test 10</a>
+                <a href='{{item.title_2 remove: "", "/"}.saorsa.studio'>Test 11</a>
+                <a href='{{item.title_2 replace: "", "/"}.saorsa.studio'>Test 12</a>
+
             </div>
             {% endfor %}
         </div>
