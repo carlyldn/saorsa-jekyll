@@ -7,7 +7,7 @@ projects:
    paragraph_1: A four page website concept for an independent home bakery.
    paragraph_2: Option to integrate Shopify buttons to allow direct orders.
    project_image: images/sophia-ipad-crop.png
-   title_1: baked-by-sophia
+   url_1: baked-by-sophia
    p3: Gaia
    p4: Glamping
    paragraph_3: A single page website concept for a glamping company.
@@ -25,7 +25,7 @@ projects:
    paragraph_3: A single page website concept for a yoga studio.
    paragraph_4: 
    project_image_2: /images/yoga-mockup.jpg  
-   url_2: asana-studio
+   title_2: asana-studio
 ---
 
 <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
@@ -44,7 +44,7 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p1}} {{item.p2}}</h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
-                <a href='{{ item.title_1 | replace: "https://www.saorsa.studio", "-"}}.saorsa.studio'>Link</a>
+                <a href='{{ item.url_1 | replace: "/", " "}}.saorsa.studio'>Link</a>
             </div>
 
             <div class="col-5-middle_sm-12 pr sm-reset">
@@ -63,7 +63,7 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p3}} {{item.p4}}</h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
-                <a href="{{item.url_2 | prepend: site.baseurl }}" class="mt2">View live project</a>
+                <a href='{{ item.title_2 | replace: "/", " "}}.saorsa.studio'>Title</a>
             </div>
             {% endfor %}
         </div>
