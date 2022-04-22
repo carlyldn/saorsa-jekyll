@@ -44,7 +44,8 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p1}} {{item.p2}}</h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
-                <a href='{{item.url_1 remove: " ", "/"}}.saorsa.studio'>View live project</a>
+                <a href='{{item.url_1 replace: " ", "-"}.saorsa.studio'>View Live Project</a>
+
             </div>
 
             <div class="col-5-middle_sm-12 pr sm-reset">
@@ -63,20 +64,7 @@ projects:
                 <h2 class="big pb1 uppercase culture">{{item.p3}} {{item.p4}}</h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
-                <a href="{{item.url_2 remove: site.url }}.saorsa.studio">View live project</a>
-                <a href="{{item.url_2 remove: site.baseurl }}.saorsa.studio">View live project</a>
-                <a href="{{item.url_2 replace: site.url }}.saorsa.studio">View live project</a>
-                <a href="{{item.url_2 replace: site.baseurl }}.saorsa.studio">View live project</a>
-
-                <a href='{{item.url_2 remove: " ", "-"}}.saorsa.studio'>Test 1</a>
-                <a href='{{item.url_2 replace: " ", "-"}}.saorsa.studio'>Test 2</a>
-
-                <a href='{{item.url_2 remove: "", "-"}}.saorsa.studio'>Test 5</a>
-                <a href='{{item.url_2 replace: "", "-"}}.saorsa.studio'>Test 6</a>
-
-                <a href='{{item.url_2 remove: "", "/"}}.saorsa.studio'>Test 9</a>
-                <a href='{{item.url_2 replace: "", "/"}}.saorsa.studio'>Test 10</a>
-
+                <a href='{{item.url_2 replace: "", "-", "/"}}.saorsa.studio'>View live project</a>
             </div>
             {% endfor %}
         </div>
