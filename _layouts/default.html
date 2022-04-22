@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  ` <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,17 @@
     <meta name="msapplication-TileColor" content="#efe7dd">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Meta for social sharing -->
+    <meta property="og:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
+    <meta property="og:type" content="{{ page.title | default: site.data.site-settings.seo.type }}">
+    <meta property="og:description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}"> 
+    <meta property="og:image" content="{{ page.seo.social_image | default: site.data.site-settings.seo.social_image }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:card" content="{{ page.seo.twitter_card | default: site.data.site-settings.seo.twitter_card }}">
+    <meta name="twitter:description" content=" {{ page.seo.twitter_description | default: site.data.site-settings.seo.twitter_description}} ">
+    <meta name="og:site_name" content="{{ site.data.site-settings.seo.site_name }}">
+    <link rel="icon" type="image/png" href="{{ site.data.site-settings.seo.favicon_image }}">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -46,7 +58,7 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- This is our custom stylesheet -->
+    <!-- Custom stylesheet -->
     <link href="/style.css" rel="stylesheet" />
 </head>
 
