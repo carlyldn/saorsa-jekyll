@@ -182,6 +182,7 @@ p:last-child {margin-bottom:0;}
     font-weight: normal;
 } */
 
+h4 {min-height: 3rem;}
 
 
 .left   { text-align: left; }
