@@ -225,8 +225,8 @@ h4 {min-height: 3rem;}
         color: #183127;
   }
   /* Adjusting where the arrows sit, inside or outside container */
-  /* .slick-prev {left: 2%;}
-  .slick-next {right: 2%;} */
+  .slick-prev {left: 2%;}
+  .slick-next {right: 2%;}
   
   /* Styling dots below images */
   .slick-dots {
@@ -650,6 +650,9 @@ textarea:focus {
     .order-5 {order: 5;}
 
     .sm-sub {display: block;}
+
+    .slick-prev {left: -10px;}
+    .slick-next {right: -10px;}
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
