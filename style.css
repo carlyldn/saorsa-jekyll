@@ -545,7 +545,6 @@ textarea:focus {
 @media (max-width: 64em) {
 
   html {font-size: 14px;}
-  body {border: 1px solid blue;}
 
   .water {min-height: 40vh;}
   .md-60 {min-height: 60vh;}
@@ -555,7 +554,6 @@ textarea:focus {
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
 @media (max-width: 48em) {
-    body {border: 1px solid green;}
     html {font-size: 14px;}
 
     .sm-show,
@@ -636,14 +634,12 @@ textarea:focus {
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
-    body {border: 1px solid orange;}
     html {font-size: 12px;}
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
   .scroll a {position: static;}
 
-  .about-01 {min-height: 30vh;}
   .about-02 {min-height: 30vh;}
 
   .xs-p5 {padding: 10%;}
