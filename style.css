@@ -33,39 +33,17 @@ html {scroll-behavior: smooth;}
 
 @font-face {
     font-family: 'Sophillia';
-    src: url('/fonts/sophillia-webfont.woff');
-    src: local('☺︎'),
-      url("/fonts/sophillia-webfont.woff") format("woff"),
-      url("/fonts/sophillia-webfont.woff2") format("woff2"),
-      url("/fonts/SophilliaRegular.eot") format("eot"),
-      url("/fonts/SophilliaRegular.ttf") format("truetype");
-    }
-
-  @media screen and (max-device-width: 480px) {
-    @font-face {
-      font-family: "Sophillia";
-      src: url("Sophillia.woff") format("woff"),
-      url("Sophillia.otf") format("opentype"),
-      url("Sophillia.svg#Sophillia") format("svg");
-  }}
+    src: url('/fonts/sophillia-webfont.woff2') format('woff2'),
+         url('/fonts/sophillia-webfont.woff') format('woff'),
+         url('/fonts/SophilliaRegular.ttf') format('truetype');
+  }
 
   @font-face {
     font-family: 'Culture';
-    src: url('/fonts/culture-bold-webfont.woff');
-    src: local('☺︎'),
-      url("/fonts/culture-bold-webfont.woff") format("woff"),
-      url("/fonts/culture-bold-webfont.woff2") format("woff2"),
-      url("/fonts/Culture-Bold.otf") format("opentype"),
-      url("/fonts/culture-bold-webfont.ttf") format("truetype");
-    }
-
-  @media screen and (max-device-width: 480px) {
-    @font-face {
-      font-family: "Culture";
-      src: url("Culture.woff") format("woff"),
-      url("Culture.otf") format("opentype"),
-      url("Culture.svg#Culture") format("svg");
-  }}
+    src: url('/fonts/culture-bold-webfont.woff2') format('woff2'),
+         url('/fonts/culture-bold-webfont.woff') format('woff'),
+         url('/fonts/culture-bold-webfont.ttf') format('truetype');
+  }
 
 body { 
     font-family: 'IvyPresto-Display', 'Didot', serif;
@@ -362,7 +340,7 @@ a:hover {color: #CF593A}
   }
 
 .menu-button {
-    color: #CF593A;
+    color: #183127;
     cursor: pointer;
     font-size: 2.5rem;
     position: fixed;
@@ -585,8 +563,8 @@ textarea:focus {
      {display: block;}
 
     .sm-flex {display:flex;}
-
     .sm-hide { display: none;}
+    .menu-button {color: #fcfcfc;}
 
     .sm-60 {min-height: 60vh;}
 
@@ -680,7 +658,6 @@ textarea:focus {
 .xs-order-2 {order: 2;}
 
 .xs-center {text-align: center;}
-
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
