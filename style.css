@@ -1,7 +1,9 @@
-/* Light grey #D5CECE
-dark grey #707070
-green #183127
- */
+/* COLOURS
+
+#efe7dd - background cream 
+#183127 - dark green
+#CF593A - intense orange
+*/
 
 	/* Temporary Styles */
 	/* * {
@@ -50,6 +52,7 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
     background-color: #efe7dd;
+    /* color: #183127; */
     color: #27332E;
 }
 
@@ -239,7 +242,7 @@ img {
     background-color: lightgray;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .bg-light {background-color: #efe7dd;}
@@ -293,7 +296,7 @@ img {
 }
 
 .headshot {
-    background-image: url('/images/carly-01.png');
+    background-image: url('/images/carly-saorsa-2.jpg');
     min-height: 50vh;
     width: auto;
 }
@@ -339,7 +342,7 @@ a:hover {color: #CF593A}
     margin: 0.2rem;
   }
 
-.menu-button {
+.menu-responsive {
     color: #183127;
     cursor: pointer;
     font-size: 2.5rem;
@@ -349,7 +352,18 @@ a:hover {color: #CF593A}
     right: 4vh;
 }
 
-.menu-button:hover {color:#d3664a;}
+.menu-green {
+    color: #183127;
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: fixed;
+    z-index: 5;
+    top: 2vh;
+    right: 4vh;
+}
+
+.menu-responsive:hover {color:#d3664a;}
+.menu-green:hover {color:#d3664a;}
 
 .cross {
     cursor: pointer;
@@ -562,7 +576,7 @@ textarea:focus {
 
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
-    .menu-button {color: #fcfcfc;}
+    .menu-responsive {color: #fcfcfc;}
 
     .sm-60 {min-height: 60vh;}
 
@@ -583,7 +597,12 @@ textarea:focus {
         align-self: flex-end;
     }
  
-    .menu-button {
+    .menu-responsive {
+    top: 2vh;
+    right: 2vh;
+}
+
+    .menu-green {
     top: 2vh;
     right: 2vh;
 }

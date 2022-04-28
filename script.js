@@ -16,7 +16,8 @@ $( document ).ready(function() {
 $('.menu-container').click(function(){
     $('.menu').fadeToggle(600);
     $('.cross').fadeToggle(0);
-    $('.menu-button').fadeToggle(0);
+    $('.menu-responsive').fadeToggle(0);
+    $('.menu-green').fadeToggle(0);
 });
 
     // Animate on scroll
@@ -55,9 +56,3 @@ const viewportObserver = new IntersectionObserver((entries, observer) => {
 })
 // Instruct the IntersectioObserver to observe the #typed element
 viewportObserver.observe(document.querySelector('#typed'))
-
-
-// lightGallery(document.getElementById('lightgallery'), {
-//     speed: 500,
-//     download: false
-// });
