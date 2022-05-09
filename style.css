@@ -95,7 +95,7 @@ p:last-child {margin-bottom:0;}
  }
 
  .logo {
-     font-family: 'Sophillia', 'Didot', serif;
+     font-family: 'Culture', 'Didot', serif;
      font-size: 5rem;
      font-weight: normal;
      padding: 10% 0 0 10%;
@@ -103,7 +103,7 @@ p:last-child {margin-bottom:0;}
 
  .dot {
     position: relative;
-    left: 3px;
+    left: 6px;
     letter-spacing: 5px;
 }
 
@@ -476,6 +476,7 @@ textarea:focus {
     padding: 0.5rem 2rem;
     display: inline-block;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -491,29 +492,30 @@ textarea:focus {
 
  /* ---------- Padding Utility Classes ---------- */ 
 
- .p5   { padding: 5%;   }
+ .p1  {padding: 1rem;}
+ .p2  {padding: 2rem;}
+ .p5   {padding: 5%;}
  .p10 {padding: 10%;}
  
- .p1  { padding: 1rem; }
- .p2  { padding: 2rem; }
  
- .pt  { padding-top: 5%; }
+ .pt0 {padding-top: 0;}
+ .pt1 {padding-top: 1rem;}
+ .pt5  {padding-top: 5%;}
  .pt10 {padding-top: 10%;}
- .pb  { padding-bottom: 5%; }
- .pl  { padding-left: 5%; }
- .pr  { padding-right: 5%; }
- 
- .pt1 { padding-top: 1rem; }
- .pb1 { padding-bottom: 1rem; }
- .pl1 { padding-left: 1rem; }
- .pl5 { padding-left: 5%; }
- .pr1 { padding-right: 1rem; }
- 
- 
- .pt0 { padding-top: 0; }
- .pb0 { padding-bottom: 0; }
- .pl0 { padding-left: 0; }
- .pr0 { padding-right: 0; }
+
+ .pb0 {padding-bottom: 0;}
+ .pb1 {padding-bottom: 1rem;}
+ .pb  {padding-bottom: 5%;}
+
+ .pl0 {padding-left: 0;}
+ .pl1 {padding-left: 1rem;}
+ .pl  {padding-left: 5%;}
+ .pl5 {padding-left: 5%;}
+
+ .pr0 {padding-right: 0;}
+ .pr  {padding-right: 5%;}
+ .pr1 {padding-right: 1rem;}
+
  
  /* ---------- Margin Utility Classes ---------- */ 
  
@@ -553,16 +555,36 @@ textarea:focus {
 .sm-sub
  {display: none;}
 
+ /* ------- CUSTOM MEDIA QUERY FOR FOOTER STYLES ----------- */
+ 
+ @media (max-width: 74em) {
+
+    footer .big {font-size: 2.7rem;}
+    footer nav {font-size: 0.8rem;}
+ }
+
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
 
   html {font-size: 14px;}
+  
+  .md-hide {display: none;}
+
+  footer .big {font-size: 2.5rem;}
+
+  .md-center {text-align: center;}
+
+  .md-order-2 {order: 2;}
+
+  .md-mt5 {margin-top: 5%;}
 
   .water {min-height: 40vh;}
   .md-60 {min-height: 60vh;}
   .md-right {text-align: right;}
+
+}
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
@@ -649,6 +671,8 @@ textarea:focus {
     .slick-prev {left: -10px;}
     .slick-next {right: -10px;}
 
+}
+
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
@@ -673,6 +697,8 @@ textarea:focus {
 .xs-order-2 {order: 2;}
 
 .xs-center {text-align: center;}
+
+}
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
