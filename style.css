@@ -607,6 +607,8 @@ textarea:focus {
     .saorsa-chair {min-height: 30vh;}
     .headshot {min-height: 40vh;}
 
+    .dot {left: 4px;}
+
     p {font-size: 1rem;}
     .reg {font-size: 1.2rem;}
     .med {font-size: 1.5rem;}
