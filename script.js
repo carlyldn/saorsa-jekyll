@@ -75,3 +75,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Accordion javascript
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}

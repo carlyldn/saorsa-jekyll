@@ -132,10 +132,6 @@ p:last-child {margin-bottom:0;}
      padding: 0 10% 0 10%;
  }
 
- header nav {
-     font-size:
- }
-
  .dot {
     position: relative;
     left: 4px;
@@ -389,7 +385,7 @@ a {
     margin: 0.5rem;
   }
 
-  header a:hover {
+  header nav a:hover {
     font-style: italic;
   }
 
@@ -451,31 +447,58 @@ footer nav {font-size: 0.8rem;}
 
 /* Accordion styling */
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
+    width: 800px;
+    margin: 90px auto;
+    color: black;
     background-color: white;
-    display: none;
-    overflow: hidden;
+    padding: 45px 45px;
   }
+  
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+  
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+  
 
 /* Contact form */
 
