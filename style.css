@@ -16,7 +16,10 @@
 	h1,h2,h3,h4,h5,h6,p,a {
 	    border: 2px solid rgb(179, 84, 84);
 	} */
-/* End temporary styles */
+    /* End temporary styles */
+
+    /* h1, h2, span {white-space: pre-line;} */
+
 * {
     padding: 0;
     margin: 0;
@@ -48,9 +51,9 @@ html {scroll-behavior: smooth;}
   }
 
 body { 
-    font-family: 'IvyPresto-Display', 'Didot', serif;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-family: 'IvyPresto-Display', serif;
+    font-weight: 600;
+    font-size: 1rem;
     background-color: #efe7dd;
     /* color: #183127; */
     color: #27332E;
@@ -60,7 +63,27 @@ p {
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+}
+
+.normal {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.bold {font-weight: 600;}
+
+.featured {
+    font-size: 10vh;
+    color: #ED9273;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.freedom {
+    color: #183127;
+    font-style: italic;
 }
 
 h2 {font-size: 1.5rem;}
@@ -94,16 +117,28 @@ p:last-child {margin-bottom:0;}
     font-style: italic;
  }
 
- .logo {
+ .courier {
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ header .logo, footer .logo {
      font-family: 'Culture', 'Didot', serif;
-     font-size: 5rem;
+     font-size: 2rem;
      font-weight: normal;
-     padding: 10% 0 0 10%;
+ }
+
+ .mob-logo {
+     font-size: 3.5rem;
+     padding: 0 10% 0 10%;
+ }
+
+ header nav {
+     font-size:
  }
 
  .dot {
     position: relative;
-    left: 6px;
+    left: 4px;
     letter-spacing: 5px;
 }
 
@@ -113,13 +148,14 @@ p:last-child {margin-bottom:0;}
     padding-left: 10%;
 }
 
- .subtitle {
+ .footer-copyright {
      font-size: 0.7rem;
      letter-spacing: 1.5px;
+     font-family: 'Courier New', Courier, monospace;
  }
 
 .reg {font-size: 1.5rem;}
-.med {font-size: 1.8rem;}
+.med {font-size: 1.7rem;}
 .big {font-size: 3rem;}
 .huge {font-size: 5rem;}
 
@@ -130,26 +166,16 @@ p:last-child {margin-bottom:0;}
 
 .lowercase {text-transform: lowercase;}
 
-.capped-width { 
-	max-width: 2400px; 
-	margin: auto;
-}
-
 .flex-flip:nth-child(even) {
     flex-direction: row-reverse;
     text-align: left;
 }
 
+.border {border-bottom: 1px solid;}
+.border-r {border-right: 1px solid;}
+.border-t {border-top: 1px solid;}
 
-
-/* header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-.text-center {
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,26 +279,20 @@ img {
     min-height: 20vh;
 }
 
-.water {
-    background-image: url('/images/saorsa-studio-london-web-developer.jpg');
-    min-height: 50vh;
-    position: relative;
+.banner-home {
+    background-image: url('/images/saorsa-studio-web-home.jpg');
+    display: block;
+    min-height: 88vh;
 }
 
 .flowers {
-    height: 30vh;
-    width: 40vh;
-    object-fit: cover;
-    object-position: center;
-    margin-top: -6rem;
-    margin-left: -12rem;
-    position: absolute;
+    background-image: url('/images/saorsa-studio-web-design-london.jpg');
+    height: 45vh;
 }
 
 .saorsa-coffee {
     background-image: url('/images/saorsa-coffee.jpg');
-    min-height: 50vh;
-    position: relative;
+    min-height: 85vh;
 }
 
 .saorsa-chair {
@@ -281,8 +301,8 @@ img {
 }
 
 .about-01 {
-    background-image: url('/images/saorsa-about-01.jpg');
-    min-height: 100vh;
+    background-image: url('/images/bradley-dunn-y07cKNLW_9Q-unsplash.jpg');
+    min-height: 45vh;
 }
 
 .about-02 {
@@ -297,7 +317,7 @@ img {
 
 .headshot {
     background-image: url('/images/carly-saorsa-2.jpg');
-    min-height: 50vh;
+    min-height: 105vh;
     width: auto;
 }
 
@@ -317,6 +337,20 @@ img {
 .mockup-3 {background-image: url('images/gaia.png');}
 .mockup-4 {background-image: url('images/yoga-mockup.jpg');}
 
+.contact-banner {
+    background-image: url('/images/andrew-neel-M1duyRiAMm4-unsplash.jpg');
+    background-position: 10% 40%;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.services-banner {
+    background-image: url('/images/saorsa-chair.jpg');
+    background-position: 10% 80%;
+    background-size: cover;
+    min-height: 50vh;
+}
+
 .landscape {padding-bottom: 65%;}
 .portrait {padding-bottom: 125%;}
 .square   {padding-bottom: 100%;}
@@ -331,39 +365,45 @@ img {
 a {
     color: inherit;
     padding-bottom: 2px;
-    border-bottom: 1px solid;
     text-decoration: none;
 }
 
-a:hover {color: #CF593A}
+/* a:hover {color: #CF593A} */
 
 .inline {
     display: inline-block;
     margin: 0.2rem;
   }
 
-.menu-responsive {
-    color: #183127;
+  .main-menu {
+      border-bottom: 1px solid;
+      min-height: 12vh;
+  }
+
+  header a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: inherit;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  header a:hover {
+    font-style: italic;
+  }
+
+.menu-button {
+    color: white;
     cursor: pointer;
     font-size: 2.5rem;
     position: fixed;
     z-index: 5;
     top: 2vh;
-    right: 4vh;
+    right: 2vh;
 }
 
-.menu-green {
-    color: #183127;
-    cursor: pointer;
-    font-size: 2.5rem;
-    position: fixed;
-    z-index: 5;
-    top: 2vh;
-    right: 4vh;
-}
-
-.menu-responsive:hover {color:#d3664a;}
-.menu-green:hover {color:#d3664a;}
+.menu-button:hover {color:#d3664a;}
 
 .cross {
     cursor: pointer;
@@ -372,8 +412,7 @@ a:hover {color: #CF593A}
     position: fixed;
     z-index: 5;
     top: 2vh;
-    right: 5vh;
-    /* transition: 2s; */
+    right: 3vh;
 }
 
 .cross:hover {color:#CF593A}
@@ -408,46 +447,35 @@ i .fab {border: none;}
 
 .fab {font-size: 1.5rem;}
 
-/* Scroll button */
+footer nav {font-size: 0.8rem;}
 
-#scroll a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #183127;
-    border-bottom: 1px solid #183127;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb04 2s infinite;
-    animation: sdb04 2s infinite;
-    box-sizing: border-box;
-  }
-  @-webkit-keyframes sdb04 {
-    0% {-webkit-transform: rotate(-45deg) translate(0, 0);}
-    20% {-webkit-transform: rotate(-45deg) translate(-10px, 10px);}
-    40% {-webkit-transform: rotate(-45deg) translate(0, 0);}
-  }
-  @keyframes sdb04 {
-    0% {transform: rotate(-45deg) translate(0, 0);}
-    20% {transform: rotate(-45deg) translate(-10px, 10px);}
-    40% {transform: rotate(-45deg) translate(0, 0);}
-  }
+/* Accordion styling */
 
-  .scroll a {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    transition: opacity .3s;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
   }
-
-  .scroll a:hover {opacity: .5;}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 
 /* Contact form */
 
@@ -468,21 +496,28 @@ textarea:focus {
     outline:none;
 }
 
+.arrow {
+    font-size: 1.5rem;
+    display: inline;
+    padding-left: 1rem;}
+
 .button {
-    font-family: 'Culture';
+    display: inline-block;
+    font-family: courier-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid #183127;
-    padding: 0.5rem 2rem;
-    display: inline-block;
-    margin-top: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #CF593A;
     border: 1px solid #CF593A;
-    color: #efe7dd;
+    transition: 0.5s;
 }
 
 .label {
@@ -509,8 +544,8 @@ textarea:focus {
 
  .pl0 {padding-left: 0;}
  .pl1 {padding-left: 1rem;}
- .pl  {padding-left: 5%;}
  .pl5 {padding-left: 5%;}
+ .pl10 {padding-left: 10%;}
 
  .pr0 {padding-right: 0;}
  .pr  {padding-right: 5%;}
@@ -555,14 +590,6 @@ textarea:focus {
 .sm-sub
  {display: none;}
 
- /* ------- CUSTOM MEDIA QUERY FOR FOOTER STYLES ----------- */
- 
- @media (max-width: 74em) {
-
-    footer .big {font-size: 2.7rem;}
-    footer nav {font-size: 0.8rem;}
- }
-
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
@@ -580,7 +607,6 @@ textarea:focus {
 
   .md-mt5 {margin-top: 5%;}
 
-  .water {min-height: 40vh;}
   .md-60 {min-height: 60vh;}
   .md-right {text-align: right;}
 
@@ -598,14 +624,18 @@ textarea:focus {
 
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
-    .menu-responsive {color: #fcfcfc;}
+
+    header a {
+        padding: 0.4rem;
+        margin: 0.5rem;
+      }
 
     .sm-60 {min-height: 60vh;}
 
     .sm-mb10 {margin-bottom: 20%;}
 
+    .banner-home {min-height: 60vh;}
     .saorsa-chair {min-height: 30vh;}
-    .headshot {min-height: 40vh;}
 
     .dot {left: 4px;}
 
@@ -620,31 +650,10 @@ textarea:focus {
         display: flex;
         align-self: flex-end;
     }
- 
-    .menu-responsive {
-    top: 2vh;
-    right: 2vh;
-}
 
-    .menu-green {
-    top: 2vh;
-    right: 2vh;
-}
-
-    .cross {
-    top: 2vh;
-    right: 3vh;
-}
-
-    .saorsa-coffee {
-    min-height: 40vh;
-    }
-
-    .flowers {
-      height: 20vh;
-      width: 25vh;
-      margin-top: -12rem;
-      margin-left: -3rem;
+    .headshot {
+        min-height: 50vh;
+        background-position: 10% 40%;
     }
 
     .sm-reset {
@@ -668,8 +677,6 @@ textarea:focus {
     .order-4 {order: 4;}
     .order-5 {order: 5;}
 
-    .sm-sub {display: block;}
-
     .slick-prev {left: -10px;}
     .slick-next {right: -10px;}
 
@@ -685,10 +692,14 @@ textarea:focus {
 
   .scroll a {position: static;}
 
-  .about-02 {min-height: 30vh;}
+  .about-02 {min-height: 50vh;}
+  .banner-home {min-height: 60vh;}
+  .saorsa-coffee {min-height: 40vh;}
 
   .xs-p5 {padding: 10%;}
   .xs-pt30 {padding-top: 30%;}
+
+  .mob-border {border-bottom: 1px solid;}
 
   .logo {font-size: 2.8rem;}
   .logo-subtitle {

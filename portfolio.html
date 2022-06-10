@@ -2,48 +2,35 @@
 layout: default
 title: Saorsa Studio Portfolio
 projects:
- - p1: Baked by
-   p2: Sophia
-   paragraph_1: A four page website concept for an independent home bakery.
-   paragraph_2: Option to integrate Shopify buttons to allow direct orders.
+
+ - title: Luma Candles
+   paragraph_1: A five page website concept for an independent candle brand.
+   paragraph_2: Embedded video with option to integrate Shopify buttons to allow direct orders.
    project_image: /images/sophia-ipad-crop.png
-   url_1: baked-by-sophia
-   p3: Gaia
-   p4: Glamping
+   url_1: luma-candles
+   title_2: Baked by Sophia
+   paragraph_3: A four page website concept for an independent home bakery.
+   paragraph_4: Option to integrate Shopify buttons to allow direct orders.
+   project_image_2: /images/sophia-ipad-crop.png
+   url_2: baked-by-sophia     
+ - title: Asana Studio
+   paragraph_1: A single page website concept for a yoga studio.
+   paragraph_2: 
+   project_image: /images/yoga-mockup.jpg  
+   url: asana-studio   
+   title_2: Gaia Glamping
    paragraph_3: A single page website concept for a glamping company.
    paragraph_4: Option to integrate preferred booking platform to allow direct bookings from customers.
    project_image_2: /images/Gaia-Mockup.jpg
    url_2: gaia-glamping
- - p1: Hungry Vegan
-   p2: Co
+ - title: Hungry Vegan Co
    paragraph_1: A single page website concept for a vegan restaurant.
    paragraph_2: Option to integrate preferred booking platform to allow direct bookings from customers.
    project_image: /images/vegan-mockup.png  
-   url_1: hungry-vegan-co
-   p3: Asana
-   p4: Studio
-   paragraph_3: A single page website concept for a yoga studio.
-   paragraph_4: 
-   project_image_2: /images/yoga-mockup.jpg  
-   url_2: asana-studio
+   url_1: hungry-vegan-co    
 ---
 
-<header>
-    <div class="menu-container menu-green light soph">
-        <span class="mb0">ME</span>
-        <span>NU</span>
-    </div>
-
-    <div class="cross menu-container light">&#10005;</div>
-
-      <div class="menu light sm-pt30">
-        <a href="/" class="culture uppercase">home</a>
-        <a href="/about" class="culture uppercase">about</a>
-        <a href="/portfolio" class="culture uppercase">portfolio</a>
-        <a href="/contact" class="culture uppercase">contact</a>
-      </div>
-    </nav>
-</header>
+{% include menu.html %}
 
 <section class="grid-center bg-light" data-aos="fade-up" data-aos-duration="1500">
     <div class="col-12-middle p5 sm-hide">
@@ -56,9 +43,9 @@ projects:
 
         {% for item in page.projects %}
         <!-- Project 1 -->
-        <div class="grid-center">
+        <div class="grid-center order-1">
             <div class="col-6-middle_sm-12 p5 right sm-center sm-pt40">
-                <h2 class="big pb1 uppercase culture">{{item.p1}} {{item.p2}}</h2>
+                <h2 class="big pb1 uppercase culture">{{item.title}}</h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
                 <a href='http://{{item.url_1}}.saorsa.studio'>View live project</a>
@@ -77,8 +64,8 @@ projects:
                     <div><img src="{{item.project_image_2}}"></div>
                 </div>
             </div>
-            <div class="col-6-middle_sm-12-middle p5 sm-center sm-pt30 order-2">
-                <h2 class="big pb1 uppercase culture">{{item.p3}} {{item.p4}}</h2>
+            <div class="col-6-middle_sm-12-middle p5 sm-center sm-pt30 order-4">
+                <h2 class="big pb1 uppercase culture">{{item.title_2}}</h2>
                 <p>{{item.paragraph_3}}</p>
                 <p>{{item.paragraph_4}}</p>
                 <a href='http://{{item.url_2}}.saorsa.studio'>View live project</a>
