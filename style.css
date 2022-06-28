@@ -275,7 +275,7 @@ img {
 }
 
 .banner-home {
-    background-image: url('/images/saorsa-studio-web-home.jpg');
+    background-image: url('/images/saorsa-studio-london-web-development-home-02.jpg');
     display: block;
     min-height: 88vh;
 }
@@ -286,22 +286,17 @@ img {
 }
 
 .saorsa-coffee {
-    background-image: url('/images/saorsa-coffee.jpg');
+    background-image: url('/images/saorsa-studio-london-web-design-home-01.jpg');
     min-height: 85vh;
 }
 
 .saorsa-chair {
-    background-image: url('/images/saorsa-chair.jpg');
+    background-image: url('/images/saorsa-studio-london-web-design-and-development-custom-code.jpg');
     min-height: 50vh;
 }
 
-.about-01 {
-    background-image: url('/images/bradley-dunn-y07cKNLW_9Q-unsplash.jpg');
-    min-height: 45vh;
-}
-
 .about-02 {
-    background-image: url('/images/about-02.jpg');
+    background-image: url('/images/saorsa-studio-london-web-design-about-02.jpg');
     min-height: 100vh;
 }
 
@@ -311,42 +306,24 @@ img {
 }
 
 .about-04 {
-    background-image: url('/images/mathilde-langevin-LdPzzJcrPLM-unsplash.jpg');
+    background-image: url('/images/saorsa-studio-london-web-design-and-development-about-01.jpg');
     min-height: 90vh;
 }
 
 .headshot {
-    background-image: url('/images/carly-saorsa-2.jpg');
+    background-image: url('/images/saorsa-studio-web-design-and-development-london-carly.jpg');
     min-height: 105vh;
     width: auto;
 }
 
-.headshot-2 {
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    margin-top: -11rem;
-    margin-left: -8rem;
-    height: 20vh;
-    width: auto;
-    z-index: -1;
-}
-
-.mockup-1 {background-image: url('images/home-mockup.jpg');}
-.mockup-2 {background-image: url('images/sophia-ipad-crop.png');}
-.mockup-3 {background-image: url('images/gaia.png');}
-.mockup-4 {background-image: url('images/yoga-mockup.jpg');}
+.mockup-1 {background-image: url('images/saorsa-studio-web-design-london-home-mockup.jpg');}
+.mockup-2 {background-image: url('images/saorsa-studio-london-web-design-baked-by-sophia-mockup.jpg');}
+.mockup-3 {background-image: url('images/saorsa-studio-london-gaia-glamping-mockup.jpg');}
+.mockup-4 {background-image: url('images/saorsa-studio-london-web-design-yoga-mockup.jpg');}
 
 .contact-banner {
-    background-image: url('/images/andrew-neel-M1duyRiAMm4-unsplash.jpg');
-    background-position: 10% 40%;
-    background-size: cover;
-    min-height: 50vh;
-}
-
-.services-banner {
-    background-image: url('/images/saorsa-chair.jpg');
-    background-position: 10% 80%;
+    background-image: url('/images/saorsa-studio-london-bespoke-web-design-contact.jpg');
+    background-position: 10% 30%;
     background-size: cover;
     min-height: 50vh;
 }
@@ -646,6 +623,8 @@ textarea:focus {
 
   .md-center {text-align: center;}
 
+  .about-04 {min-height: 60vh;}
+
   .md-order-2 {order: 2;}
 
   .md-mt5 {margin-top: 5%;}
@@ -739,6 +718,7 @@ textarea:focus {
   .scroll a {position: static;}
 
   .about-02 {min-height: 50vh;}
+  .about-04 {min-height: 50vh;}
   .banner-home {min-height: 60vh;}
   .saorsa-coffee {min-height: 40vh;}
 
