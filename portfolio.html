@@ -40,14 +40,14 @@ projects:
 
 
     <!-- Projects -->
-    <section class="bg-light p5" data-aos="fade-up" data-aos-duration="1500">
+    <section class="bg-light p5 sm-pt30" data-aos="fade-up" data-aos-duration="1500">
 	    {% for item in page.projects %}
 	    <div class="grid-center portfolio">
 		    <div class="col-6-middle_sm-12 p5 right sm-center">
                 <h2 class="big pb1 uppercase culture">{{item.title}}</h2>
                 <p>{{item.paragraph_1}}</p>
                 <p>{{item.paragraph_2}}</p>
-                <a href='http://{{item.url}}.saorsa.studio'>View live project</a>
+                <a href='http://{{item.url}}.saorsa.studio' class="button">View live project</a>
        	    </div>
        	<div class="col-5-middle_sm-12">
             <div class="p5">

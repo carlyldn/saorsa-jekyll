@@ -669,7 +669,7 @@ textarea:focus {
     .sm-hide { display: none;}
 
     .portfolio:nth-child(even) div {text-align: center;}
-    .portfolio {padding-bottom: 15%;}
+    .portfolio {padding-bottom: 20%;}
 
     header a {
         padding: 0.4rem;
