@@ -51,8 +51,9 @@ html {scroll-behavior: smooth;}
   }
 
 body { 
-    font-family: 'IvyPresto-Display', serif;
-    font-weight: 600;
+    font-family: freight-display-pro, serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1rem;
     background-color: #efe7dd;
     /* color: #183127; */
@@ -60,7 +61,6 @@ body {
 }
 
 p {
-    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -105,15 +105,15 @@ p:last-child {margin-bottom:0;}
      font-weight: normal;
  }
 
- .ivy {
-    font-family: 'IvyPresto-Display', 'Didot', serif;
-    font-weight: normal;
- } 
-
-
  .ivy-italic {
-    font-family: 'IvyPresto-Display', serif;
+    font-family: ivypresto-display, serif;
     font-weight: 400;
+    font-style: italic;
+ }
+
+ .freight-italic {
+    font-family: freight-display-pro, serif;
+    font-weight: 500;
     font-style: italic;
  }
 
@@ -162,10 +162,9 @@ p:last-child {margin-bottom:0;}
 
 .lowercase {text-transform: lowercase;}
 
-.flex-flip:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: left;
-}
+.portfolio {text-align: right;}
+.portfolio:nth-child(even) {flex-direction: row-reverse;}
+.portfolio:nth-child(even) div {text-align: left;}
 
 .border {border-bottom: 1px solid;}
 .border-r {border-right: 1px solid;}
@@ -311,6 +310,11 @@ img {
     min-height: 50vh;
 }
 
+.about-04 {
+    background-image: url('/images/mathilde-langevin-LdPzzJcrPLM-unsplash.jpg');
+    min-height: 90vh;
+}
+
 .headshot {
     background-image: url('/images/carly-saorsa-2.jpg');
     min-height: 105vh;
@@ -447,54 +451,70 @@ footer nav {font-size: 0.8rem;}
 
 /* Accordion styling */
 
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
 .accordion {
-    width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
+    margin: 1rem;
+    padding: 1rem;
   }
-  
+
   .accordion .container {
     position: relative;
-    margin: 10px 10px;
+    margin: 0.5rem;
   }
   
-  .accordion .label {
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .accordion-label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    text-transform: uppercase;
     position: relative;
+    display: block;
     padding: 10px 0;
     cursor: pointer;
+    transition: 1s;
   }
+
   
-  .accordion .label::before {
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .accordion-label::before {
     content: '+';
     color: black;
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: 5px;
     font-size: 30px;
     transform: translateY(-50%);
   }
   
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
   .accordion .content {
     position: relative;
-    background: white;
     height: 0;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s;
   }
+  
+  /* Adds a horizontal line between the contents */
   
   .accordion hr {
     width: 100;
     margin-left: 0;
     border: 1px solid grey;
   }
-  
-  .accordion .container.active .content {
-    height: 150px;
+
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: auto;
   }
   
-  .accordion .container.active .label::before {
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .accordion-label::before {
     content: '-';
     font-size: 30px;
   }
@@ -647,6 +667,9 @@ textarea:focus {
 
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
+
+    .portfolio:nth-child(even) div {text-align: center;}
+    .portfolio {padding-bottom: 15%;}
 
     header a {
         padding: 0.4rem;
