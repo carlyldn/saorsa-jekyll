@@ -1,13 +1,21 @@
 favicon_image: /icons/favicon-16x16.png
 seo:
- site_name: Saorsa Studio Web Design & Development
- title: Saorsa Studio Web Design & Development London
- type: website
- description: A London based web design & development studio. We design and build minimalist, timeless websites for small businesses and entrepreneurs.
- keywords: web design services for small business, website builders for small business, affordable websites for small business
- social_image: /images/saorsa-studio-web-design-london-home-mockup.jpg
- author: Saorsa Studio
- twitter_card: summary
- twitter_description: We design and build minimalist, timeless websites for small businesses and entrepreneurs.
+  site_name: Saorsa Studio Web Design & Development
+  title: Saorsa Studio Web Design & Development London
+  type: website
+  description: A London based web design & development studio. We design and build minimalist, timeless websites for small businesses and entrepreneurs.
+  keywords: web design services for small business, website builders for small business, affordable websites for small business
+  social_image: /images/saorsa-studio-web-design-london-home-mockup.jpg
+  author: Saorsa Studio
+  twitter_card: summary
+  twitter_description: We design and build minimalist, timeless websites for small businesses and entrepreneurs.
 social:
- instagram_username: saorsa.studio
+  instagram_username: saorsa.studio
+  facebook_url:
+  twitter_username:
+  tiktok_username:
+  pinterest_url:
+  youtube_url:
+design:
+  dark_text_color:
+  light_text_color:
