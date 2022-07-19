@@ -58,6 +58,8 @@ body {
     background-color: #efe7dd;
     /* color: #183127; */
     color: #27332E;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 p {
@@ -675,7 +677,14 @@ textarea:focus {
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
 
+    .sm-flex-center {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
     .portfolio:nth-child(even) div {text-align: center;}
+    .portfolio:nth-child(odd) div {text-align: center;}
     .portfolio {padding-bottom: 20%;}
 
     header a {
