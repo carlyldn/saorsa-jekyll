@@ -127,7 +127,7 @@ h2 {font-size: 1.6rem;}
  }
 
  .mob-logo {
-     font-size: 3.5rem;
+     font-size: 2.5rem;
      padding: 0 10% 0 10%;
  }
 
@@ -745,6 +745,10 @@ textarea:focus {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
+  p {font-size: 1.3rem;}
+  h1 {font-size: 1.5rem;}
+
+  .xs-inline { display: inline-block; }
   .scroll a {position: static;}
 
   .xs-50 {min-height: 50vh;}
@@ -758,7 +762,7 @@ textarea:focus {
 
   .logo {font-size: 2.8rem;}
   .logo-subtitle {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: -0.5rem;
 }
 
