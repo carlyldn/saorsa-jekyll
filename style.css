@@ -71,7 +71,7 @@ body {
 }
 
 p { 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     font-style: normal;
     letter-spacing: 0.5px;
@@ -114,11 +114,33 @@ h2 {font-size: 1.6rem;}
     font-style: italic;
  }
 
+ .ivy-italic-bold {
+    font-family: ivypresto-display, 'Didot', serif;
+    font-weight: 300;
+    font-style: italic;
+ }
+
  .hamburg-hand {
     font-family: 'HamburgHand-Light', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+
+ em p {
+    font-family: ivypresto-display, 'Didot', serif;
+    font-weight: 100;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+em h2 {
+    font-family: ivypresto-display, 'Didot', serif;
+    font-weight: 300;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.
 
  header .logo, footer .logo {
      font-family: 'Culture', 'Didot', serif;
@@ -127,7 +149,7 @@ h2 {font-size: 1.6rem;}
  }
 
  .mob-logo {
-     font-size: 2.5rem;
+     font-size: 3.5rem;
      padding: 0 10% 0 10%;
  }
 
@@ -151,7 +173,7 @@ h2 {font-size: 1.6rem;}
  }
 
 .normal {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     font-style: normal;
 }
@@ -302,13 +324,6 @@ img {
 .mockup-3 {background-image: url('images/saorsa-studio-london-gaia-glamping-mockup.jpg');}
 .mockup-4 {background-image: url('images/saorsa-studio-london-web-design-yoga-mockup.jpg');}
 
-.contact-banner {
-    background-image: url('/images/saorsa-studio-london-bespoke-web-design-contact.jpg');
-    background-position: 10% 30%;
-    background-size: cover;
-    min-height: 50vh;
-}
-
 .landscape {padding-bottom: 65%;}
 .portrait {padding-bottom: 125%;}
 .square   {padding-bottom: 100%;}
@@ -338,7 +353,7 @@ a {
       min-height: 12vh;
   }
 
-  header a {
+  header nav a {
     font-family: 'HamburgHand-Light', sans-serif;
     font-size: 0.7rem;
     display: inline-block;
@@ -403,6 +418,7 @@ a {
     font-size: 1.5rem;
     padding: 1rem;
     margin-top: 4%;
+    margin: 3rem;
     text-align: center;
     border: none;
 }
@@ -425,9 +441,12 @@ i .fab {border: none;}
     margin: 0.5rem;
   }
 
-  .accordion p {
-    margin: 1rem 0 0.5rem 0;
-  }
+  .accordion p {margin: 1rem 0 0.5rem 0;}
+
+  .accordion h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
   
   /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
   
@@ -490,6 +509,11 @@ i .fab {border: none;}
 
 /* Contact form */
 
+form input, form textarea {
+    font-weight: 100;
+    font-style: normal;
+}
+
 input, 
 textarea {
     width: 100%;
@@ -507,6 +531,12 @@ input:focus,
 textarea:focus {
     border: 2px solid #183127; 
     outline:none;
+}
+
+form .button {
+    background-color: #FCFCFC;
+    border: none;
+    border: 1px solid #27332E;
 }
 
 .arrow {
@@ -534,6 +564,8 @@ textarea:focus {
 }
 
 .label {
+    font-family: 'HamburgHand-Light', sans-serif;
+    font-size: 0.7rem;
     display:inline-block;
     margin-bottom: 8px;
 }
@@ -593,6 +625,10 @@ textarea:focus {
 
  /* Cookie banner */
 
+ .cookie-banner p {
+    font-size: 0.8rem;
+ }
+
  .cookie-banner {
     width: 100%;
     background-color: #efe7dd;
@@ -641,6 +677,8 @@ textarea:focus {
   
   .md-hide {display: none;}
 
+  .md-mb5 {margin-bottom: 5%;}
+
   footer .big {font-size: 2.5rem;}
 
   .md-center {text-align: center;}
@@ -664,10 +702,36 @@ textarea:focus {
     .sm-sub
      {display: block;}
 
+     .sm-reset {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sm-inline {display: inline-block;}
+
+    .sm-center {text-align: center;}
+    .sm-left {text-align: left;}
+
+    .sm-p0 {padding: 0;}
+    .sm-p5 {padding: 5%;}
+    .sm-p10 {padding: 10%;}
+
+    .sm-pt10 {padding-top: 10%;}
+    .sm-pt30 {padding-top: 30%;}
+    .sm-pt40 {padding-top: 40%;}
+
+    .sm-mb5 {margin-bottom: 5%;}
+
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
 
     .sm-flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sm-block-center {
         display: block;
         align-items: center;
         justify-content: center;
@@ -708,24 +772,6 @@ textarea:focus {
         background-position: 10% 40%;
     }
 
-    .sm-reset {
-        padding: 0;
-        margin: 0;
-    }
-
-    .sm-center {text-align: center;}
-    .sm-left {text-align: left;}
-
-    .sm-p0 {padding: 0;}
-
-    .sm-p5 {padding: 5%;}
-
-    .sm-pt10 {padding-top: 10%;}
-    .sm-pt30 {padding-top: 30%;}
-    .sm-pt40 {padding-top: 40%;}
-
-    .sm-mb5 {margin-bottom: 5%;}
-
     .order-1 {order: 1;}
     .order-2 {order: 2;}
     .order-3 {order: 3;}
@@ -734,6 +780,16 @@ textarea:focus {
 
     .slick-prev {left: -10px;}
     .slick-next {right: -10px;}
+
+     /* Cookie banner */
+
+ .cookie-banner p {
+    font-size: 1rem;
+ }
+
+ .cookie-dismiss {
+    font-size: 0.8rem;
+ }
 
 }
 
@@ -747,6 +803,8 @@ textarea:focus {
 
   p {font-size: 1.3rem;}
   h1 {font-size: 1.5rem;}
+
+  .xs-center {text-align: center;}
 
   .xs-inline { display: inline-block; }
   .scroll a {position: static;}
@@ -768,9 +826,8 @@ textarea:focus {
 
 .xs-order-2 {order: 2;}
 
-.xs-center {text-align: center;}
-
 .xs-light {color: white;}
+.contact-banner, .contact-banner p {color: white;}
 
 }
 
