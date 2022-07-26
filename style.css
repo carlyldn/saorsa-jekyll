@@ -37,6 +37,54 @@ html {
     overflow-x: hidden;
 }
 
+ /* ---------- Padding Utility Classes ---------- */ 
+
+ .p1  {padding: 1rem;}
+ .p2  {padding: 2rem;}
+ .p5   {padding: 5%;}
+ .p10 {padding: 10%;}
+ 
+ 
+ .pt0 {padding-top: 0;}
+ .pt1 {padding-top: 1rem;}
+ .pt5  {padding-top: 5%;}
+ .pt6 {padding-bottom: 6rem;}
+ .pt10 {padding-top: 10%;}
+
+ .pb0 {padding-bottom: 0;}
+ .pb1 {padding-bottom: 1rem;}
+ .pb  {padding-bottom: 5%;}
+
+ .pl0 {padding-left: 0;}
+ .pl1 {padding-left: 1rem;}
+ .pl5 {padding-left: 5%;}
+ .pl10 {padding-left: 10%;}
+
+ .pr0 {padding-right: 0;}
+ .pr  {padding-right: 5%;}
+ .pr1 {padding-right: 1rem;}
+
+ 
+ /* ---------- Margin Utility Classes ---------- */ 
+ 
+ .m05 {margin: 0.5rem;}
+ .m1 {margin: 1rem;}
+ .m5 {margin: 5%;}
+
+ .mt {margin-top: 5%;}
+ .mb {margin-bottom: 5%;}
+ .ml {margin-left: 5%;}
+ .mr {margin-right: 5%;}
+
+ .mb10 {margin-bottom: 10%;}
+ .mb20 {margin-bottom: 20%;}
+ 
+ .mt2 {margin-top: 2rem;}
+ .mb2 {margin-bottom: 2rem;}
+ 
+ .mt0 {margin-top: 0;}
+ .mb0 {margin-bottom: 0;}
+
 /* Typography styles */
 
 @font-face {
@@ -65,7 +113,7 @@ body {
     font-weight: 100;
     font-style: normal;
     background-color: #efe7dd;
-    color: #27332E;
+    color: black;
     overflow-x: hidden;
     width: 100vw;
 }
@@ -83,10 +131,11 @@ p {
 
 p:last-child {margin-bottom:0;} 
 
-h1 {
-    font-size: 1.7rem;
+h1, h2 {
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: normal;
+    line-height: 1;
 }
 
 h2, h3, h4, h5, h6 {
@@ -95,13 +144,6 @@ h2, h3, h4, h5, h6 {
     line-height: 1;
     margin-bottom: 2rem;
 }
-
-h2 {font-size: 1.6rem;}
-
-.soph {
-    font-family: 'Sophillia', 'Didot', serif;
-    font-weight: normal;
- }
 
  .culture {
      font-family: 'Culture', 'Didot', serif;
@@ -122,6 +164,7 @@ h2 {font-size: 1.6rem;}
 
  .hamburg-hand {
     font-family: 'HamburgHand-Light', sans-serif;
+    font-size: 0.8rem;
     font-weight: normal;
     font-style: normal;
 }
@@ -139,19 +182,6 @@ em h2 {
     font-weight: normal;
     text-transform: lowercase;
 }
-
-.
-
- header .logo, footer .logo {
-     font-family: 'Culture', 'Didot', serif;
-     font-size: 2rem;
-     font-weight: normal;
- }
-
- .mob-logo {
-     font-size: 3.5rem;
-     padding: 0 10% 0 10%;
- }
 
  .dot {
     position: relative;
@@ -171,6 +201,10 @@ em h2 {
      color: #efe7dd;
      letter-spacing: 1px;
  }
+
+ .contact-banner, .contact-banner p {color: white;}
+
+ .small {font-size: 0.7rem;;}
 
 .normal {
     font-size: 1rem;
@@ -194,9 +228,14 @@ em h2 {
 .portfolio:nth-child(even) {flex-direction: row-reverse;}
 .portfolio:nth-child(even) div {text-align: left;}
 
-.border {border-bottom: 1px solid;}
+.border {border: 1px solid;}
+
+.border-b {border-bottom: 1px solid;}
 .border-r {border-right: 1px solid;}
 .border-t {border-top: 1px solid;}
+
+.border-nt {border-top: none;}
+.border-nb {border-bottom: none;}
 
 .flex-center {
     display: flex;
@@ -293,20 +332,8 @@ img {
     min-height: 20vh;
 }
 
-.banner-home {
-    background-image: url('/images/saorsa-studio-london-web-development-home-02.jpg');
-    display: block;
+.banner {
     min-height: 88vh;
-}
-
-.flowers {
-    background-image: url('/images/saorsa-studio-web-design-london.jpg');
-    height: 45vh;
-}
-
-.saorsa-coffee {
-    background-image: url('/images/saorsa-studio-london-web-design-home-01.jpg');
-    min-height: 85vh;
 }
 
 .about-02 {
@@ -328,12 +355,24 @@ img {
 .portrait {padding-bottom: 125%;}
 .square   {padding-bottom: 100%;}
 
+.tall-30 {min-height: 30vh;}
 .tall-50 {min-height: 50vh;}
 .tall-60 {min-height: 60vh;}
 .tall-70   {min-height: 70vh;}
 .tall-100 {min-height: 100vh;}
 
-/* Nav & links */
+.relative {position: relative;}
+.absolute {position: absolute;}
+
+.contact-text {
+    height: 88vh;
+    border-bottom: 1px solid;
+}
+
+.formFooter-heightMask {
+    height: 40px;}
+
+/* Nav & links , Header & Footer */
 
 a {
     color: inherit;
@@ -341,38 +380,55 @@ a {
     text-decoration: none;
 }
 
-/* a:hover {color: #CF593A} */
-
 .inline {
     display: inline-block;
     margin: 0.2rem;
   }
 
-  .main-menu {
-      border-bottom: 1px solid;
-      min-height: 12vh;
-  }
-
-  header nav a {
-    font-family: 'HamburgHand-Light', sans-serif;
-    font-size: 0.7rem;
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    padding: 0.5rem;
-    margin: 0.5rem;
-  }
-
-  header nav a:hover {
-    font-style: italic;
-  }
-
-  footer nav {
-    font-family: 'HamburgHand-Light', sans-serif;
-    font-size: 0.7rem;;
+header .logo, footer .logo {
+    font-family: 'Culture', 'Didot', serif;
+    font-size: 2rem;
+    font-weight: normal;
 }
 
-.menu-button {
+.main-menu {
+    border-bottom: 1px solid;
+    min-height: 12vh;
+}
+
+header nav a {
+  font-family: 'HamburgHand-Light', sans-serif;
+  font-size: 0.7rem;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+header nav a:hover {
+  font-style: italic;
+}
+
+footer nav {
+  font-family: 'HamburgHand-Light', sans-serif;
+  font-size: 0.7rem;;
+}
+
+i .fab {border: none;}
+
+.fab {font-size: 1.5rem;}
+
+/* Mobile menu styles */
+
+.burger-container span {
+    display: block;
+    line-height: 1;
+}
+
+.burger-button {
+    font-family: 'Sophillia', 'Didot', serif;
+    font-weight: normal;
     color: white;
     cursor: pointer;
     font-size: 2.5rem;
@@ -382,7 +438,7 @@ a {
     right: 2vh;
 }
 
-.menu-button:hover {color:#d3664a;}
+.burger-button:hover {color:#d3664a;}
 
 .cross {
     cursor: pointer;
@@ -396,12 +452,17 @@ a {
 
 .cross:hover {color:#CF593A}
 
-.menu-container span {
-    display: block;
-    line-height: 1;
+.mob-logo {
+    cursor: pointer;
+    color:#183127;
+    position: fixed;
+    z-index: 5;
+    top: 3.5vh;
+    left: 3vh;
+    width: 50%;
 }
 
-.menu {
+.mob-menu {
     display: none;
     background: #efe7dd;
     color: #183127;
@@ -413,7 +474,7 @@ a {
     left: 0;
 }
 
-.menu a {
+.mob-menu a {
     display: block;
     font-size: 1.5rem;
     padding: 1rem;
@@ -423,9 +484,57 @@ a {
     border: none;
 }
 
-i .fab {border: none;}
+/* List styles */
 
-.fab {font-size: 1.5rem;}
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+  li:before {
+    content: "—";
+    padding-right: 5px;
+  }
+
+/* Video styles */
+
+.vimeo-container {
+        width: 100%;
+        height: calc(100vw * 9 / 16);
+        position: relative;
+    }
+
+.vimeo-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+  }
+ 
+  video {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 
 /* Accordion styling */
 
@@ -505,7 +614,6 @@ i .fab {border: none;}
     font-size: 30px;
     transition: 1s;
   }
-  
 
 /* Contact form */
 
@@ -570,50 +678,72 @@ form .button {
     margin-bottom: 8px;
 }
 
- /* ---------- Padding Utility Classes ---------- */ 
+/* Scroll on hover - now booking */
 
- .p1  {padding: 1rem;}
- .p2  {padding: 2rem;}
- .p5   {padding: 5%;}
- .p10 {padding: 10%;}
- 
- 
- .pt0 {padding-top: 0;}
- .pt1 {padding-top: 1rem;}
- .pt5  {padding-top: 5%;}
- .pt10 {padding-top: 10%;}
+:root {
+--scroller-width: 100vw;
+--scroller-height: 100px;
+--scroll-item-count: 6;
+--items-displayed: 5;
+--scroll-item-width: 560px;
+--scroll-duration: calc(var(--scroll-item-count) * 5s);
+}
 
- .pb0 {padding-bottom: 0;}
- .pb1 {padding-bottom: 1rem;}
- .pb  {padding-bottom: 5%;}
+.scroll-container {
+    font-family: 'HamburgHand-Light', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #183127;
+    color: white;
+    width: 100%;
+    height: 7vh;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
- .pl0 {padding-left: 0;}
- .pl1 {padding-left: 1rem;}
- .pl5 {padding-left: 5%;}
- .pl10 {padding-left: 10%;}
+ .scroll-container:hover > span {opacity: 0;}
+  
+  .scroller {
+    width: var(--scroller-width);
+    height: var(--scroller-height);
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    right: 0;
+        width: 100%;
+    transform: translateX(-50vw); }
+  
+  .scroll-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--scroll-duration) linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+}
 
- .pr0 {padding-right: 0;}
- .pr  {padding-right: 5%;}
- .pr1 {padding-right: 1rem;}
+.scroller:hover .scroll-content{
+    animation-play-state: running;
+    opacity: 1;
+} 
 
- 
- /* ---------- Margin Utility Classes ---------- */ 
- 
- .m5 {margin: 5%;}
-
- .mt {margin-top: 5%;}
- .mb {margin-bottom: 5%;}
- .ml {margin-left: 5%;}
- .mr {margin-right: 5%;}
-
- .mb10 {margin-bottom: 10%;}
- .mb20 {margin-bottom: 20%;}
- 
- .mt2 {margin-top: 2rem;}
- .mb2 {margin-bottom: 2rem;}
- 
- .mt0 {margin-top: 0;}
- .mb0 {margin-bottom: 0;}
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(calc(-1 * var(--scroll-item-width) * var(--scroll-item-count))); } }
+  
+  .scroll-content li {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    flex-shrink: 0;
+    width: var(--scroll-item-width);
+    white-space: nowrap; }
 
  /* Instagram widget */
 
@@ -665,6 +795,7 @@ form .button {
 .md-show,
 .sm-flex,
 .cross,
+.mob-logo,
 .sm-sub
  {display: none;}
 
@@ -688,7 +819,10 @@ form .button {
   .md-mt5 {margin-top: 5%;}
 
   .md-60 {min-height: 60vh;}
+  .md-70 {min-height: 70vh;}
   .md-right {text-align: right;}
+
+  .tall-30 {min-height: 15vh;}
 
 }
 
@@ -708,6 +842,9 @@ form .button {
     }
 
     .sm-inline {display: inline-block;}
+    .sm-flex {display:flex;}
+    .sm-hide { display: none;}
+    .sm-block {display: block;}
 
     .sm-center {text-align: center;}
     .sm-left {text-align: left;}
@@ -721,9 +858,7 @@ form .button {
     .sm-pt40 {padding-top: 40%;}
 
     .sm-mb5 {margin-bottom: 5%;}
-
-    .sm-flex {display:flex;}
-    .sm-hide { display: none;}
+    .sm-mb10 {margin-bottom: 10%;}
 
     .sm-flex-center {
         display: flex;
@@ -737,6 +872,8 @@ form .button {
         justify-content: center;
     }
 
+    .sm-border {border-bottom: 1px solid black;}
+
     .portfolio:nth-child(even) div {text-align: center;}
     .portfolio:nth-child(odd) div {text-align: center;}
     .portfolio {padding-bottom: 20%;}
@@ -746,10 +883,18 @@ form .button {
         margin: 0.5rem;
       }
 
+    .contact-text {
+        min-height: 0;
+        height: 70vh;
+        padding: 30% 10% 20% 10%;
+    }
+
     .sm-50 {min-height: 50vh;}
     .sm-60 {min-height: 60vh;}
 
     .sm-mb10 {margin-bottom: 20%;}
+
+    .banner {min-height: 60vh;}
 
     .banner-home {min-height: 60vh;}
 
@@ -801,8 +946,8 @@ form .button {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
-  p {font-size: 1.3rem;}
-  h1 {font-size: 1.5rem;}
+  p {font-size: 1.2rem;}
+  h1 {font-size: 1.4rem;}
 
   .xs-center {text-align: center;}
 
@@ -810,13 +955,14 @@ form .button {
   .scroll a {position: static;}
 
   .xs-50 {min-height: 50vh;}
-  .banner-home {min-height: 60vh;}
   .saorsa-coffee {min-height: 40vh;}
 
   .xs-p5 {padding: 10%;}
   .xs-pt30 {padding-top: 30%;}
 
-  .mob-border {border-bottom: 1px solid;}
+  .mob-border {border-bottom: 1px solid black;}
+
+  .mob-border-0 {border: none;}
 
   .logo {font-size: 2.8rem;}
   .logo-subtitle {
@@ -827,7 +973,6 @@ form .button {
 .xs-order-2 {order: 2;}
 
 .xs-light {color: white;}
-.contact-banner, .contact-banner p {color: white;}
 
 }
 

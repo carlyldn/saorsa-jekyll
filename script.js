@@ -13,10 +13,11 @@
 // });
 
 $( document ).ready(function() {
-$('.menu-container').click(function(){
-    $('.menu').fadeToggle(600);
+$('.burger-container').click(function(){
+    $('.mob-menu').fadeToggle(600);
     $('.cross').fadeToggle(0);
-    $('.menu-button').fadeToggle(0);
+    $('.mob-logo').fadeToggle(0);
+    $('.burger-button').fadeToggle(0);
 });
 
     // Animate on scroll
@@ -87,26 +88,62 @@ for (i=0; i<accordion.length; i++) {
 
 // Cookie banner 
 
-// Key under which name the cookie is saved
-const cookieName = 'cookieconsent';
-// The value could be used to store different levels of consent
-const cookieValue = 'dismissed';
-
-function dismiss() {
-    const date = new Date();
-    // Cookie is valid 1 year: now + (days x hours x minutes x seconds x milliseconds)
-    date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-    // Set cookie
-    document.cookie = `${cookieName}=${cookieValue};expires=${date.toUTCString()};path=/`;
-
-    // Remove the banner
-    document.querySelector('.cookie-banner').remove();
+function createCookie(name,value,days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
 }
-
-// Get button element
-const buttonElement = document.querySelector('.cookie-dismiss');
-// Maybe cookie consent is not present
-if (buttonElement) {
-    // Listen on button click
-    buttonElement.addEventListener('click', dismiss);
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
 }
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+if(readCookie('cookie-notice-dismissed')=='true') {
+  // Add tracking scripts here 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-233269910-1');
+  // End tracking scripts 
+} else {
+  document.getElementById('cookie-notice').style.display = 'block';
+}
+document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+  createCookie('cookie-notice-dismissed','true',31);
+  document.getElementById('cookie-notice').style.display = 'none';
+  // location.reload();
+});
+// document.querySelector("#close-cookie-banner").addEventListener("click", (e) => {
+  
+//   document.querySelector("#cookie-notice").style.display = 'none';
+// });
+
+
+// // Get button element
+// const buttonElement = document.querySelector('.cookie-dismiss');
+
+
+// Jotform
+
+var $ = jQuery.noConflict();
+
+jQuery(document).ready(function(jQuery) {
+
+"use strict";
+
+$('iframe').contents().find("head").append($("<style type='text/css'>  div.formFooter{ display:none !important; } .jf-branding{ display: none !important; } div.form-footer{ display: none !important; } </style>"));
+
+});
