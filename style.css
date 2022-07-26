@@ -457,9 +457,9 @@ i .fab {border: none;}
     color:#183127;
     position: fixed;
     z-index: 5;
-    top: 3.5vh;
-    left: 3vh;
-    width: 50%;
+    bottom: 3vh;
+    left: 33.3%;
+    width: 40%;
 }
 
 .mob-menu {
