@@ -12,6 +12,8 @@
 //     $('.cross').hide();
 // });
 
+// ---------------- Mobile menu styles
+
 $( document ).ready(function() {
 $('.burger-container').click(function(){
     $('.mob-menu').fadeToggle(600);
@@ -20,11 +22,11 @@ $('.burger-container').click(function(){
     $('.burger-button').fadeToggle(0);
 });
 
-    // Animate on scroll
+// ---------------- Animate on scroll
     AOS.init();
 });
 
-// Slider Gallery
+// ---------------- Slider Gallery
 $('.slider-container').slick({
 	autoplay: true, // Do we want it to autoplay? true or false
 	autoplaySpeed: 2000, // How long between each slide when auto-playing
@@ -38,7 +40,8 @@ $('.slider-container').slick({
 	pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
 });
 
-    // Typing Animation
+  // ---------------- Typing Animation
+
     // If the #typed element comes into the viewport, this callback will be run
 const viewportObserver = new IntersectionObserver((entries, observer) => {
     // If #typed is within the viewport
@@ -57,7 +60,7 @@ const viewportObserver = new IntersectionObserver((entries, observer) => {
 // Instruct the IntersectioObserver to observe the #typed element
 viewportObserver.observe(document.querySelector('#typed'))
 
-// Accordion java
+// ---------------- Accordion java
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -77,7 +80,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Accordion javascript
+// ---------------- Accordion javascript
 const accordion = document.getElementsByClassName('container');
 
 for (i=0; i<accordion.length; i++) {
@@ -86,7 +89,7 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 
-// Cookie banner 
+// ---------------- Cookie banner 
 
 function createCookie(name,value,days) {
   var expires = "";
@@ -126,6 +129,9 @@ document.getElementById('cookie-notice-accept').addEventListener("click",functio
   document.getElementById('cookie-notice').style.display = 'none';
   location.reload();
 });
+
+
+
 // document.querySelector("#close-cookie-banner").addEventListener("click", (e) => {
   
 //   document.querySelector("#cookie-notice").style.display = 'none';
@@ -136,7 +142,7 @@ document.getElementById('cookie-notice-accept').addEventListener("click",functio
 // const buttonElement = document.querySelector('.cookie-dismiss');
 
 
-// Jotform
+// ---------------- Jotform
 
 var $ = jQuery.noConflict();
 
