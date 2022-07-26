@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Saorsa Studio Services
-new_website_image: /images/saorsa-studio-london-web-design-home-01.jpg
-existing_website_image: /images/saorsa-studio-london-web-design-home-01.jpg
 banner_image_1: /images/georgia-de-lotz-m3dAcqo7EMs-unsplash.jpg
 banner_image_2: /images/andrew-neel-0njfq0jQKOA-unsplash.jpg
 banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
+new_website_image: /images/jon-tyson-eBN71NgyPU8-unsplash.jpg
+existing_website_image: /images/reynaldo-rivera-GzyFjagwlqE-unsplash.jpg
+pricing_image: /images/annie-spratt-FEMo-sCMLoA-unsplash.jpg
 ---
 
 <section class="grid border-b banner-services sm-pt30">
@@ -33,10 +34,10 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
     </div>
     <div class="col-8_sm-10 grid-spaceAround center">
         <div class="col-5_sm-6">
-            <h3 class="button sm-block">Don't have an existing website but are interested in one</h3>
+            <a href="#new-website" class="button sm-block">Don't have an existing website but are interested in one</a>
         </div>
         <div class="col-5_sm-6">
-            <h3 class="button sm-block">Already have a website but would like a new one</h3>
+            <a href="#existing-website" class="button sm-block">Already have a website but would like a new one</a>
         </div>
     </div>
 </section>
@@ -44,12 +45,12 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
 
 
 <!-- New website -->
-<section class="grid border-b">
+<section id="new-website" class="grid border-b">
     <div class="col-5-middle_sm-12 p5">
         <div class="tall-50 img border" style="background-image: url('{{page.new_website_image}}');">
         </div>
     </div>
-    <div class="col-7-middle_xs-12 grid-center">
+    <div class="col-7-middle_sm-12 grid-center">
         <div class="col-9_sm-11 p5">
             <h3 class="hamburg-hand">I don't have a website but I'm interested in getting one</h3>
             <p>Let us design and build a website for you that is completely custom coded and doesn’t tie you down to any specific platform.  There are endless website builders out there - Squarespace, WordPress, Showit, Shopify… the list goes on.  We don't use any of these and build everything from scratch.</p>
@@ -59,15 +60,15 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
 </section>
 
 <!-- Website refresh -->
-<section class="grid border-b">
-    <div class="col-7-middle_xs-12 grid-center">
+<section id="existing-website" class="grid border-b">
+    <div class="col-7-middle_sm-12 grid-center order-3">
         <div class="col-9_sm-11 p5">
             <h3 class="hamburg-hand">I have a website already, but I'm interested in a new one</h2>
             <p>So, you’ve got a website and it’s served its purpose for your business so far, but now you’re ready to take it to the next level with something shiny and new… let’s talk! </p>
             <p>We’ll discuss what you like and dislike about your current website and come up with a strategy on how to make your new site work for your needs.  Whether your current site is on WordPress, SquareSpace or any other website drag and drop builder, we’ll help get your domain transferred to our preferred hosting provider and take care of all the back end techy stuff.</p>
         </div>
     </div>
-    <div class="col-5-middle_sm-12 p5">
+    <div class="col-5-middle_sm-12 p5 order-2">
         <div class="tall-50 img border" style="background-image: url('{{page.existing_website_image}}');">
         </div>
     </div>
@@ -76,7 +77,7 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
 <!-- What's included -->
 
 <section class="grid tall-50 border-b p5">
-    <div class="col-6-top_xs-12 grid-center">
+    <div class="col-6-top_sm-12 grid-center">
         <div class="col-9_sm-11 sm-mb10">
             <h3 class="hamburg-hand">What's included</h2>
             <p>Our websites are built using the latest web technologies, including HTML, CSS, Jekyll and jQuery.  No matter how many pages you need, we include the following as part of every package: </p>
@@ -92,7 +93,7 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
             </ul>
         </div>
     </div>
-    <div class="col-6-top_xs-12 grid-center">
+    <div class="col-6-top_sm-12 grid-center">
         <div class="col-9_sm-11">
             <h3 class="hamburg-hand">We also offer the following additional services</h2>
             <p>The below offerings are carried out by our specialists who are experts in their respective areas and are charged at an extra cost.</p>
@@ -108,7 +109,7 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
 <!-- Pricing -->
 
 <section class="grid tall-100 border-b">
-    <div class="col-7-middle_xs-12 grid-center">
+    <div class="col-7-middle_sm-12 grid-center order-3">
         <div class="col-9_sm-11 p5">
             <h3 class="hamburg-hand">How much does it cost?</h2>
             <p>The juicy bit... we understand that a website is a big investment for any business, especially if you're just starting out. We strive to keep things as cost effective for you as possible whilst still delivering exceptional service.</p>
@@ -119,9 +120,9 @@ banner_image_3: /images/elia-pellegrini-ds6t_pcigxg-unsplash.jpg
             <a href="/contact" class="button">Send an enquiry</a>
         </div>
     </div>
-    <div class="col-5-middle_sm-8 grid p5">
+    <div class="col-5-middle_sm-12 grid p5 order-2">
         <div class="col-12 p5">
-            <div class="tall-50 img border" style="background-image: url('{{page.existing_website_image}}');"></div>
+            <div class="tall-50 img border" style="background-image: url('{{page.pricing_image}}');"></div>
         </div>
     </div>
 </section>

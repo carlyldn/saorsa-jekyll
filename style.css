@@ -755,6 +755,8 @@ form .button {
 
  /* Cookie banner */
 
+ .cookie-banner {display: none;}
+
  .cookie-banner p {
     font-size: 0.8rem;
  }
