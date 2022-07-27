@@ -888,6 +888,7 @@ form .button {
     }
 
     .sm-border {border-bottom: 1px solid black;}
+    .sm-border-0 {border: none;}
 
     .portfolio:nth-child(even) div {text-align: center;}
     .portfolio:nth-child(odd) div {text-align: center;}
