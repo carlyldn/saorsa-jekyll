@@ -73,7 +73,7 @@ html {
 
  .mt {margin-top: 5%;}
  .mb {margin-bottom: 5%;}
- .ml {margin-left: 5%;}
+ .ml5 {margin-left: 5%;}
  .mr {margin-right: 5%;}
 
  .mb10 {margin-bottom: 10%;}
@@ -306,8 +306,10 @@ em h2 {
   
   /* Changes the colour of the active dot */
   .slick-dots li.slick-active button::before {
-         color: #d3664a;
+         color: #183127;
   }
+
+  .slick-dots li::before {content: "";}
 
 /* Images & background images */
 
@@ -335,6 +337,15 @@ img {
 .banner {
     min-height: 88vh;
 }
+
+.pricing-banner {background-position: top;}
+
+#panel2 {
+    display: none;
+    padding: 60px;
+  }
+
+#panel1 {padding: 60px;}
 
 .about-02 {
     background-image: url('/images/saorsa-studio-london-web-design-about-02.jpg');
@@ -670,6 +681,10 @@ form .button {
     border: 1px solid #CF593A;
     transition: 0.5s;
 }
+
+#slide1 .button:hover, #slide2 .button:hover {
+    border: 1px solid #183127;
+    text-decoration: underline;}
 
 .label {
     font-family: 'HamburgHand-Light', sans-serif;

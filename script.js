@@ -40,6 +40,16 @@ $('.slider-container').slick({
 	pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
 });
 
+$("#slide1").click(function(){
+  $("#panel1").show();
+  $("#panel2").hide();
+});
+
+$("#slide2").click(function(){
+  $("#panel2").show();
+  $("#panel1").hide();
+});
+
   // ---------------- Typing Animation
 
     // If the #typed element comes into the viewport, this callback will be run
