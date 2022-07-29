@@ -128,8 +128,6 @@ if(readCookie('cookie-notice-dismissed')=='true') {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'UA-233269910-1');
   // End tracking scripts 
 } else {
   document.getElementById('cookie-notice').style.display = 'block';
