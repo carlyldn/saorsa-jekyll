@@ -861,7 +861,7 @@ form .button {
     .sm-left {text-align: left;}
 
     .sm-pt30 {padding-top: 30%;}
-    .sm-ptb5 {padding: 5rem 5% 5rem 5%;}
+    .sm-ptb5 {padding: 5rem 8% 5rem 8%;}
     .sm-plr5 {padding: 5% 3rem 5% 3rem;}
 
     .sm-mb5 {margin-bottom: 5%;}
@@ -960,6 +960,7 @@ form .button {
 }
 
   .mob-border {border-bottom: 1px solid black;}
+  .mob-border-t {border-top: 1px solid black;}
   .mob-border-0 {border: none;}
 }
 
