@@ -324,9 +324,8 @@ img {
     min-height: 20vh;
 }
 
-.banner {
-    min-height: 88vh;
-}
+.banner {min-height: 88vh;}
+.banner-about {min-height: 88vh;}
 
 .pricing-banner {background-position: top;}
 
@@ -862,6 +861,7 @@ form .button {
 
     .sm-pt30 {padding-top: 30%;}
     .sm-ptb5 {padding: 5rem 5% 5rem 5%;}
+    .sm-plr5 {padding: 5% 3rem 5% 3rem;}
 
     .sm-mb5 {margin-bottom: 5%;}
 
@@ -900,6 +900,7 @@ form .button {
     }
 
     .banner {min-height: 60vh;}
+    .banner-about {min-height: 70vh;}
 
     .dot {left: 4px;}
 
