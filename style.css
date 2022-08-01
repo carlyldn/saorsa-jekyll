@@ -48,12 +48,12 @@ html {
  .pt0 {padding-top: 0;}
  .pt1 {padding-top: 1rem;}
  .pt5  {padding-top: 5%;}
- .pt6 {padding-bottom: 6rem;}
  .pt10 {padding-top: 10%;}
 
  .pb0 {padding-bottom: 0;}
  .pb1 {padding-bottom: 1rem;}
  .pb  {padding-bottom: 5%;}
+ .pb6 {padding-bottom: 6rem;}
 
  .pl0 {padding-left: 0;}
  .pl1 {padding-left: 1rem;}
@@ -156,17 +156,19 @@ h2, h3, h4, h5, h6 {
     font-style: italic;
  }
 
- .ivy-italic-bold {
-    font-family: ivypresto-display, 'Didot', serif;
-    font-weight: 300;
-    font-style: italic;
- }
-
  .hamburg-hand {
     font-family: 'HamburgHand-Light', sans-serif;
     font-size: 0.8rem;
     font-weight: normal;
     font-style: normal;
+}
+
+.filmotype {
+    font-family: filmotype-yukon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: lowercase;
+    font-size: 2rem;
 }
 
  em p {
@@ -189,12 +191,6 @@ em h2 {
     letter-spacing: 5px;
 }
 
-.logo-subtitle {
-    line-height: 1;
-    margin-top: -1.2rem;
-    padding-left: 10%;
-}
-
  .footer-copyright {
     font-family: 'HamburgHand-Light', sans-serif;
      font-size: 0.7rem;
@@ -202,9 +198,7 @@ em h2 {
      letter-spacing: 1px;
  }
 
- .contact-banner, .contact-banner p {color: white;}
-
- .small {font-size: 0.7rem;;}
+ .small {font-size: 0.7rem;}
 
 .normal {
     font-size: 1rem;
@@ -212,10 +206,8 @@ em h2 {
     font-style: normal;
 }
 
-.reg {font-size: 1.5rem;}
 .med {font-size: 1.7rem;}
 .big {font-size: 3rem;}
-.huge {font-size: 5rem;}
 
 .uppercase {
     text-transform: uppercase;
@@ -257,9 +249,7 @@ em h2 {
 
 /* Slider Gallery Styles */
 
-.slider-container {
-    padding: 2%;
-  }
+.slider-container {padding: 2%;}
   
   .slider-item {
     display: none;
@@ -340,22 +330,14 @@ img {
 
 .pricing-banner {background-position: top;}
 
+/* Website click to reveal option - do/don't have a website */
+
 #panel2 {
     display: none;
     padding: 60px;
   }
 
 #panel1 {padding: 60px;}
-
-.about-02 {
-    background-image: url('/images/saorsa-studio-london-web-design-about-02.jpg');
-    min-height: 100vh;
-}
-
-.about-03 {
-    background-image: url('/images/saorsa-studio-hero.jpg');
-    min-height: 50vh;
-}
 
 .mockup-1 {background-image: url('images/saorsa-studio-web-design-london-home-mockup.jpg');}
 .mockup-2 {background-image: url('images/saorsa-studio-london-web-design-baked-by-sophia-mockup.jpg');}
@@ -366,10 +348,14 @@ img {
 .portrait {padding-bottom: 125%;}
 .square   {padding-bottom: 100%;}
 
+.top {background-position: top;}
+.bottom {background-position: bottom;}
+
 .tall-30 {min-height: 30vh;}
 .tall-50 {min-height: 50vh;}
 .tall-60 {min-height: 60vh;}
 .tall-70   {min-height: 70vh;}
+.tall-80   {min-height: 80vh;}
 .tall-100 {min-height: 100vh;}
 
 .relative {position: relative;}
@@ -504,12 +490,13 @@ ul {
   }
   
   li {
+    font-size: 1rem;
     padding-left: 1em;
     text-indent: -1em;
   }
   
   li:before {
-    content: "—";
+    content: "✦";
     padding-right: 5px;
   }
 
@@ -657,11 +644,6 @@ form .button {
     border: none;
     border: 1px solid #27332E;
 }
-
-.arrow {
-    font-size: 1.5rem;
-    display: inline;
-    padding-left: 1rem;}
 
 .button {
     display: inline-block;
@@ -850,10 +832,14 @@ form .button {
 
   .md-mt5 {margin-top: 5%;}
 
-  .md-60 {min-height: 60vh;}
+  .md-15 {min-height: 15vh;}
+  .md-50 {min-height: 50vh;}
   .md-70 {min-height: 70vh;}
-  .md-right {text-align: right;}
 
+  .contact-text {
+    height: 0;
+    min-height: 50vh;}
+  
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -866,11 +852,6 @@ form .button {
     .sm-sub
      {display: block;}
 
-     .sm-reset {
-        padding: 0;
-        margin: 0;
-    }
-
     .sm-inline {display: inline-block;}
     .sm-flex {display:flex;}
     .sm-hide { display: none;}
@@ -879,16 +860,12 @@ form .button {
     .sm-center {text-align: center;}
     .sm-left {text-align: left;}
 
-    .sm-p0 {padding: 0;}
-    .sm-p5 {padding: 5%;}
-    .sm-p10 {padding: 10%;}
-
-    .sm-pt10 {padding-top: 10%;}
     .sm-pt30 {padding-top: 30%;}
-    .sm-pt40 {padding-top: 40%;}
+    .sm-ptb5 {padding: 5rem 5% 5rem 5%;}
 
     .sm-mb5 {margin-bottom: 5%;}
-    .sm-mb10 {margin-bottom: 10%;}
+
+    .sm-30 {min-height: 30vh;}
 
     .sm-flex-center {
         display: flex;
@@ -905,6 +882,8 @@ form .button {
     .sm-border {border-bottom: 1px solid black;}
     .sm-border-0 {border: none;}
 
+    #panel1, #panel2 {padding: 40px;}
+
     .portfolio:nth-child(even) div {text-align: center;}
     .portfolio:nth-child(odd) div {text-align: center;}
     .portfolio {padding-bottom: 20%;}
@@ -920,22 +899,12 @@ form .button {
         padding: 30% 10% 20% 10%;
     }
 
-    .sm-50 {min-height: 50vh;}
-    .sm-60 {min-height: 60vh;}
-
-    .sm-mb10 {margin-bottom: 20%;}
-
     .banner {min-height: 60vh;}
-
-    .banner-home {min-height: 60vh;}
 
     .dot {left: 4px;}
 
-    p {font-size: 1rem;}
-    .reg {font-size: 1.2rem;}
     .med {font-size: 1.5rem;}
     .big {font-size: 2.5rem;}
-    .huge {font-size: 5rem;}
     .logo {font-size: 3.5rem;}
 
     .flex-b {
@@ -948,11 +917,8 @@ form .button {
         background-position: 10% 40%;
     }
 
-    .order-1 {order: 1;}
     .order-2 {order: 2;}
     .order-3 {order: 3;}
-    .order-4 {order: 4;}
-    .order-5 {order: 5;}
 
     .slick-prev {left: -10px;}
     .slick-next {right: -10px;}
@@ -977,34 +943,22 @@ form .button {
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
-  p {font-size: 1.2rem;}
+  p, li {font-size: 1.2rem;}
   h1 {font-size: 1.4rem;}
 
   .xs-center {text-align: center;}
 
-  .xs-inline { display: inline-block; }
   .scroll a {position: static;}
 
   .xs-50 {min-height: 50vh;}
-  .saorsa-coffee {min-height: 40vh;}
 
-  .xs-p5 {padding: 10%;}
-  .xs-pt30 {padding-top: 30%;}
-
-  .mob-border {border-bottom: 1px solid black;}
-
-  .mob-border-0 {border: none;}
-
-  .logo {font-size: 2.8rem;}
-  .logo-subtitle {
-      font-size: 1.2rem;
-      margin-top: -0.5rem;
+  .mob-border-tb {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
-.xs-order-2 {order: 2;}
-
-.xs-light {color: white;}
-
+  .mob-border {border-bottom: 1px solid black;}
+  .mob-border-0 {border: none;}
 }
 
 /* ------- XXS Media Query (31em / 500px) --------------- */ 
