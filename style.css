@@ -292,6 +292,7 @@ em h2 {
   .slick-dots li button::before {
          font-size: 8px;
          color: #183127;
+         line-height: 40px;
   }
   
   /* Changes the colour of the active dot */
