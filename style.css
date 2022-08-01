@@ -435,7 +435,7 @@ i .fab {border: none;}
     right: 2vh;
 }
 
-.burger-button:hover {color:#d3664a;}
+.burger-button:hover {color:#8A9A97;}
 
 .cross {
     cursor: pointer;
@@ -447,7 +447,7 @@ i .fab {border: none;}
     right: 3vh;
 }
 
-.cross:hover {color:#CF593A}
+.cross:hover {color:#8A9A97}
 
 .mob-logo {
     cursor: pointer;
@@ -660,7 +660,7 @@ form .button {
 }
 
 .button:hover {
-    border: 1px solid #CF593A;
+    border: 1px solid #8A9A97;
     transition: 0.5s;
 }
 
